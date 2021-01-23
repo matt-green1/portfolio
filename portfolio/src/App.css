@@ -2,4 +2,51 @@
   text-align: center;
 }
 
+#name {
+  font-family: 'Windsor Pro Ultra Heavy';
+  font-size: 20px;
+}
 
+/* fonts  */
+
+@font-face {
+  font-family: 'Windsor Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Windsor Pro Bold'), url('./fonts/WindsorProBold.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'Windsor Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Windsor Pro Regular'), url('./fonts/WindsorProRg.woff') format('woff');
+  }
+  
+@font-face {
+font-family: 'Windsor Pro Elongated';
+font-style: normal;
+font-weight: normal;
+src: local('Windsor Pro Elongated'), url('./fonts/WindsorProElongated.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Windsor Pro Extra Bold Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Windsor Pro Extra Bold Condensed'), url('./fonts/WindsorProXBoldCn.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Windsor Pro Ultra Heavy';
+font-style: normal;
+font-weight: normal;
+src: local('Windsor Pro Ultra Heavy'), url('./fonts/WindsorProUltHv.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'danzza-medium-webfont';
+  font-style: normal;
+  font-weight: normal;
+  src: local('danzza-medium-webfont'), url('./fonts/danzza-medium-webfont.ttf') format('woff');
+  }

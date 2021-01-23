@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState} from "react"
 
 function App() {
+  const [activeSection, setActiveSection] = useState("home")
+  // active sections wil,l be home, about projects, contact (which is right below projects - maybe this should just be always visible - don't make people scroll...)
+
   return (
     <div>
       <h1 id="name">
@@ -11,6 +15,9 @@ function App() {
         Full Stack Developer
       </h2>
       <ul>
+      <li>
+        Home? section -- should I start on home and then you click about
+        </li>
         <li>
         About
         </li>
