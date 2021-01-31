@@ -1,22 +1,24 @@
 import React from 'react'
 
-function NavBar() {
- return(
+function NavBar(props) {
+  console.log(props)
+ 
+  return(
      
      <div>
-        "NavBar reporting for duty!" will eventually be aligned iomn right corner
+        "NavBar reporting for duty!" will eventually be aligned in right corner
         <ul>
-      <li>
-        Home? section -- should I start on home and then you click about
+        <li>
+          <button>Home</button>
         </li>
         <li>
-        About
+          <button>About</button>
         </li>
         <li>
-        Projects
+          <button>Projects</button>
         </li>
-        <li>
-        Contact
+        <li >
+          <button>Contact</button>
         </li>
       </ul>
     </div>
