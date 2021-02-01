@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {useState} from "react"
 import NavBar from './Components/NavBar'
@@ -13,11 +12,11 @@ function App() {
   const [activeSection, setActiveSection] = useState("home")
   // active sections will be home, about, projects, contact (which is right below projects - maybe this should just be always visible - don't make people scroll...)
 
-
+  console.log(activeSection)
   return (
     <div>
-      
-      <NavBar sectionSwitcher={setActiveSection} />
+      {/* I think we want a switch + browser router here? */}
+      <NavBar setActiveSection={setActiveSection} />
       <Home/>
       <About/>
       <ProjectContainer/>
