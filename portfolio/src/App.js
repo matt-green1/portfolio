@@ -7,6 +7,8 @@ import ProjectContainer from './Containers/ProjectContainer'
 import Contact from './Components/Contact'
 
 /// Next steps: Get basic swapping functionality set up for sections - on the Nav Bar
+//NOTE 2/3/21 -- will need to have the atate hold a "scroll" location and we move window to that location when you hgit home about etc
+//currently set up to mimic a routing but we may want to just scroll
 
 function App() {
   const [activeSection, setActiveSection] = useState("home")
@@ -15,12 +17,27 @@ function App() {
   console.log(activeSection)
   return (
     <div>
-      {/* I think we want a switch + browser router here? */}
+      {/* currently not actually returning correct section */}
       <NavBar setActiveSection={setActiveSection} />
-      <Home/>
-      <About/>
-      <ProjectContainer/>
-      <Contact/>
+      { (() => {
+        switch(activeSection) {
+          case 'home':
+            return <Home/>
+            // break;
+          case 'about':
+            <About/>
+            break;
+          case 'projects':
+            <ProjectContainer/>            
+            break
+          case 'contacts':
+            <Contact/>
+            break
+          default:
+            return <p>something is not working...</p>
+        }
+        })
+      }
 
     </div>
   );

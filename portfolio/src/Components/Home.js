@@ -15,13 +15,13 @@ function Home() {
       
     
       <p>
-         🧢 <br/>
-         👀 <br/>
-         👃 <br/>
-         👄 <br/>
-       🤟 👕 👍<br/>
-         👖 <br/>
-        👟👟
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🧢 <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👀 <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👃 <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👄 <br/>
+      &nbsp;&nbsp;&nbsp;🤟 👕 👍<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👖 <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👟👟
       </p>
     <p>
       Possible alt idea - a cool ascii art thing
