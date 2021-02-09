@@ -19,49 +19,14 @@ function App() {
 
   console.log(activeSection)
  
-
   return (
     <div>
       {console.log(`inside reutnr:" ${activeSection}`)}
       <NavBar setActiveSection={setActiveSection} />
-      {() => {if(activeSection === "home"){
-         console.log("home is working!!!")
-         return <Home/>;
-      } else if (activeSection === "about") {
-        console.log("about is working!!!") 
-        return <About/>;
-      } else if (activeSection === "projects") {
-        console.log("projects is working!!!")  
-        return <ProjectContainer/> ;
-     } else if (activeSection === "contacts") {
-      console.log("contacts is working!!!")  
-        return <Contact/>;
-     }
-      
-    
-      }}
-      
-      {/*switch statement currently not actually returning correct section */}
-      {/* { (() => {
-        switch(activeSection) {
-          case 'home':
-            return <Home/>
-            // break;
-          case 'about':
-            <About/>
-            break;
-          case 'projects':
-            <ProjectContainer/>            
-            break
-          case 'contacts':
-            <Contact/>
-            break
-          default:
-            return <p>something is not working...</p>
-        }
-        })
-      } */}
-
+      <Home/>
+      <About/>
+      <ProjectContainer/>
+      <Contact/>
     </div>
   );
 }
