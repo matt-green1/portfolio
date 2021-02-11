@@ -3,7 +3,7 @@ import Project from '../Components/Project'
 
 function ProjectContainer(){
     return(
-        <div>
+        <div id= "projects">
             <h3>
                 -------------------Project Container --------------
             </h3>

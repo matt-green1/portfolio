@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, animateScroll } from "react-scroll"
 
 function NavBar() {
  
@@ -6,6 +7,8 @@ function NavBar() {
      
      <div>
         "NavBar reporting for duty!" will eventually be aligned in right corner
+        
+          
         <ul>
         <li>
           <button onClick={() => console.log("home")}>Home</button>
@@ -14,10 +17,28 @@ function NavBar() {
           <button onClick={() => console.log("about")}>About</button>
         </li>
         <li>
-          <button onClick={() => console.log("projects")}>Projects</button>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={70}
+            duration={790}
+            >
+              <button>Projects</button>
+          </Link>
         </li>
         <li >
-          <button onClick={() => console.log("contact")}>Contact</button>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={70}
+            duration={790}
+            >
+              <button>Contact</button>       
+          </Link>
         </li>
       </ul>
     </div>
