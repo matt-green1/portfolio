@@ -1,7 +1,6 @@
 import React from 'react'
 
-function NavBar(props) {
-  console.log(props)
+function NavBar() {
  
   return(
      
@@ -9,16 +8,16 @@ function NavBar(props) {
         "NavBar reporting for duty!" will eventually be aligned in right corner
         <ul>
         <li>
-          <button onClick={() => props.setActiveSection("home")}>Home</button>
+          <button onClick={() => console.log("home")}>Home</button>
         </li>
         <li>
-          <button onClick={() => props.setActiveSection("about")}>About</button>
+          <button onClick={() => console.log("about")}>About</button>
         </li>
         <li>
-          <button onClick={() => props.setActiveSection("projects")}>Projects</button>
+          <button onClick={() => console.log("projects")}>Projects</button>
         </li>
         <li >
-          <button onClick={() => props.setActiveSection("contact")}>Contact</button>
+          <button onClick={() => console.log("contact")}>Contact</button>
         </li>
       </ul>
     </div>

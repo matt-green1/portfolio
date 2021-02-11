@@ -1,34 +1,38 @@
 import './App.css';
-import React, {useState} from "react"
+import React, {Component} from "react"
 import NavBar from './Components/NavBar'
 import About from './Components/About'
 import Home from './Components/Home'
 import ProjectContainer from './Containers/ProjectContainer'
 import Contact from './Components/Contact'
+import { Link, animateScroll } from "react-scroll"
 
-/// Next steps: Get basic swapping functionality set up for sections - on the Nav Bar
-//NOTE 2/3/21 -- will need to have the atate hold a "scroll" location and we move window to that location when you hgit home about etc
-//currently set up to mimic a routing but we may want to just scroll
+// https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react
 
-// NOTE: can't conditionally render hooks - so need ro refactor as a class based component
-// check this link out: https://linguinecode.com/post/4-techniques-conditional-render-react-props-state
-
-function App() {
-  const [activeSection, setActiveSection] = useState("home")
-  // active sections will be home, about, projects, contact (which is right below projects - maybe this should just be always visible - don't make people scroll...)
-
-  console.log(activeSection)
+class App extends Component {
  
-  return (
-    <div>
-      {console.log(`inside reutnr:" ${activeSection}`)}
-      <NavBar setActiveSection={setActiveSection} />
-      <Home/>
-      <About/>
-      <ProjectContainer/>
-      <Contact/>
-    </div>
-  );
+  
+
+  render() {
+    return (
+      <div>
+        <NavBar/>
+        <Home/>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+  >       </Link>
+        <About/>
+        <ProjectContainer/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <Contact/>
+      </div>
+    );
+  }
 }
 
 export default App;
