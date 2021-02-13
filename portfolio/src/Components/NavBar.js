@@ -7,42 +7,24 @@ function NavBar() {
      
      <div>
         "NavBar reporting for duty!" will eventually be aligned in right corner
-        
-          
         <ul>
-        <li>
-          <button onClick={() => console.log("home")}>Home</button>
-        </li>
-        <li>
-          <button onClick={() => console.log("about")}>About</button>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={70}
-            duration={790}
-            >
-              <button>Projects</button>
-          </Link>
-        </li>
-        <li >
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={70}
-            duration={790}
-            >
-              <button>Contact</button>       
-          </Link>
-        </li>
-      </ul>
+          <li>
+            <button onClick={() => console.log("about")}>About</button>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={70}
+              duration={790}
+              >
+                <button>Projects</button>
+            </Link>
+          </li>
+        </ul>
     </div>
-
     )
 }
 
