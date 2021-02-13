@@ -9,6 +9,7 @@ function ProjectContainer(){
             </h3>
             <Project/>
             <Project/>
+            <Project/>
         </div>
     )
 }
