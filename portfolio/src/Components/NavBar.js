@@ -9,7 +9,16 @@ function NavBar() {
         "NavBar reporting for duty!" will eventually be aligned in right corner
         <ul>
           <li>
-            <button onClick={() => console.log("about")}>About</button>
+          <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={70}
+              duration={790}
+              >
+                <button>About</button>
+            </Link>
           </li>
           <li>
             <Link
