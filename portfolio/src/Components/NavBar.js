@@ -17,8 +17,9 @@ function NavBar() {
               to="projects"
               spy={true}
               smooth={true}
-              offset={70}
+              offset={0}
               duration={790}
+              // delay={100}
               >
                 <button>Projects</button>
             </Link>

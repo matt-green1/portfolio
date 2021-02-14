@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link, animateScroll } from "react-scroll"
 
 function About() {
     return (
-        <div>
+        <div id="about">
             <h3>---------------HOME -----------------------</h3>
             
             <h1 id="name">
@@ -33,34 +34,33 @@ function About() {
                 </h3>
             </div>
 
-            <h2>
-              Full Stack Developer
-            </h2>
+            <h1>
+            🤟 Hey, I'm Matt!
+            </h1>
+
+            <h4>
+                I'm a full stack software engineer in New York City. I draw on my love for art and design and... fun, to build interesting, user friendly projects.
+            </h4>
             
-          
             <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🧢 <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👀 <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👃 <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👄 <br/>
+           
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👨 <br/>
             &nbsp;&nbsp;&nbsp;🤟 👕 👍<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👖 <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👟👟
             </p>
-          <p>
-            Possible alt idea - a cool ascii art thing
-          </p>
 
-            <h4>
-            Hi, I'm Matt!
-            </h4>
-            
-            <h3>
-                ------------About-------------------
-            </h3>
-            <p>
-                I'm a full stack software engineer in New York City. I draw on my love for art and design and... fun, to build interesting, user friendly projects.
-            </p>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={70}
+              duration={790}
+              >
+                <button>Scroll down</button>
+            </Link>
+
         </div>
     )
 }
