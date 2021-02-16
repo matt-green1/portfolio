@@ -65,10 +65,11 @@ class About extends React.Component {
                 
                 {
                 this.state.mattStatus === null
-                // https://i.pinimg.com/736x/87/ac/9d/87ac9dcf3919987eb20946c723a96483.jpg
+                // 
+                //../images/youngPicture.jpg
                 ?
                 <div>
-                    <img src="../../public/images/youngPicture.jpg" alt="youngpic"/>
+                    <img src="https://i.pinimg.com/736x/87/ac/9d/87ac9dcf3919987eb20946c723a96483.jpg" alt="youngpic"/>
                     <h4> Interests</h4>
                     <ul>
                         <li>
