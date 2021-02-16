@@ -29,8 +29,9 @@ class About extends React.Component {
                     </a>
                     <h3>LinkedIn</h3>
                     
+                    https://cdn.iconscout.com/icon/free/png-256/github-brand-logo-47401.png
                     <a href="https://github.com/matt-green1" target="_blank">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/github-brand-logo-47401.png" alt="github" className="icons"/>
+                        <img src="../../public/images/github.png" alt="github" className="icons"/>
                     </a>
                     <h3>
                         Github
@@ -64,10 +65,10 @@ class About extends React.Component {
                 
                 {
                 this.state.mattStatus === null
-                
+                // https://i.pinimg.com/736x/87/ac/9d/87ac9dcf3919987eb20946c723a96483.jpg
                 ?
                 <div>
-                    <img src="https://i.pinimg.com/736x/87/ac/9d/87ac9dcf3919987eb20946c723a96483.jpg" alt="youngpic"/>
+                    <img src="../../public/images/youngPicture.jpg" alt="youngpic"/>
                     <h4> Interests</h4>
                     <ul>
                         <li>
@@ -105,12 +106,12 @@ class About extends React.Component {
                 
                 <br/><br/><br/><br/>
                 <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={70}
-                duration={790}
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={70}
+                    duration={790}
                 >
                     <button>Scroll down</button>
                 </Link>
