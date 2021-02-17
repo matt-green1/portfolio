@@ -56,7 +56,7 @@ class About extends React.Component {
                 </h1>
 
                 <h4>
-                    I'm a full stack software engineer in New York City. I draw on my love for art and design and... fun, to build interesting, user friendly projects.
+                    I'm a full stack developer based in nyc. I'm passionate about learning new technologies in service of building apps that explroe the intersection of creativity and techlogy. I love building delightful, visually pleasant, intuitive apps. Finding new ways... 
                 </h4>
                 
                 <p>
@@ -69,8 +69,7 @@ class About extends React.Component {
                 
                 {
                 this.state.mattStatus === null
-                // 
-                //../images/youngPicture.jpg
+                
                 ?
                 <div>
                     <img src={youngPicture} alt="youngpic"/>
@@ -80,7 +79,7 @@ class About extends React.Component {
                             Dinosaurs
                         </li>
                         <li>
-                            Bike Riding
+                            Bike Riding / Legos
                         </li>
                         <li>
                             The Knicks
@@ -94,7 +93,7 @@ class About extends React.Component {
                     <h4> Interests</h4>
                     <ul>
                         <li>
-                            Building Apps
+                            Audio Storytelling / Collaging
                         </li>
                         <li>
                             Cooking

@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Going to hard code each project - the info won't be changing frequently so no reason to pull info from a seperate file
 
 function Project() {
     return (
