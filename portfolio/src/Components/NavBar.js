@@ -2,26 +2,27 @@ import React from 'react'
 import { Link, animateScroll } from "react-scroll"
 import { List, Button } from 'semantic-ui-react'
 
-
+//come back to teh active section logic - I'm not sure it's capturing a scroll and not a click
 class NavBar extends React.Component {
   
-  state = { 
-    activeNav: "about" 
-  }
- 
-  
-  handleNav = () => {
-    
+  aboutActivator = () => {
+     let aboutStatus = this.props.currentSection === "about" ? true : null  
+     return aboutStatus
   }
 
+  projectsActivator = () => {
+    let projectsStatus = this.props.currentSection === "projects" ? true : null  
+    return projectsStatus
+ }
+
   render() {   
-    let activeTest = this.handleNav()
-    console.log(`Console Logged: ${this.props.handleNavSection}`)
+    console.log(`Console Logged: ${this.props.currentSection}`)
+    
     return(
       
       <div>
           <List link>
-            <List.Item active={activeTest}>
+            <List.Item active={this.aboutActivator()} onClick={this.props.handleNavSection}>
               <Link
                 activeClass="active"
                 to="about"
@@ -30,10 +31,10 @@ class NavBar extends React.Component {
                 offset={70}
                 duration={790}
                >
-                    About
+                  About
               </Link>
             </List.Item>
-            <List.Item as='a'>
+            <List.Item active={this.projectsActivator()} onClick={this.props.handleNavSection}>
               <Link
                 activeClass="active"
                 to="projects"

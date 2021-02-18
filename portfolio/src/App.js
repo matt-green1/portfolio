@@ -21,10 +21,10 @@ class App extends React.Component {
   render() {
       return (
         <div>
-          <NavBar handleNavSection={this.handleNavSection}/>
-          <About/>
+          <NavBar handleNavSection={this.handleNavSection} currentSection={this.state.currentSection}/>
+          <About handleNavSection={this.handleNavSection}/>
           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-          <ProjectContainer/>
+          <ProjectContainer handleNavSection={this.handleNavSection}/>
         </div>
       );
     }
