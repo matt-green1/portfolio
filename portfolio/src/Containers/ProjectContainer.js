@@ -23,61 +23,72 @@ function ProjectContainer(){
             </Link>
             
             <div>
-            <h4>
+            <h3>
                 Lifeletter                
-            </h4>
+            </h3>
             <img src={lifeletter} alt="lifeletter" />
-            <p>This is an image of the muppet chef, who I just love. That's why I centered a whole project around him</p>
+            <p>Letter writing app that allows users to write and store notes to be sent in the event they pass away.<br />
+            A will for your feelings. Utilized webhooks via Zapier and FromStack to automate PDF creation and email notification.<br />
+            Designed app to store finished letters in Dropbox for added security and version control. Created and implemented style guide with CSS and Semantic UI.
+
+            </p>
             <ul>
                 <li>
-                    Demo or Deployed Site
+                    <a href="https://www.youtube.com/watch?v=pYok3fufeUI&feature=youtu.be&ab_channel=MatthewGreen">Demo</a>
                 </li>
                 <li>
-                    Front end Link
+                    <a href="https://github.com/matt-green1/capstone_frontend"> Github Frontend</a>
                 </li>
                 <li>
-                    Back end Link
+                    <a href="https://github.com/matt-green1/capstone_backend"> Github Backend</a>
                 </li>
             </ul>
             <br/>
         </div>
 
         <div>
-            <h4>
+            <h3>
                 Over/Under
                 
-            </h4>
+            </h3>
             <img src={quiz} alt="quiz" />
-            <p>This is an image of the muppet chef, who I just love. That's why I centered a whole project around him</p>
+            <p>Trivia app in which users can select themed games, track high scores over time, and customize their profile.<br/>
+            Developed Rails API backend with endpoints for users, games, rounds, and questions.<br/>
+            Used JSON Web Tokens and localStorage to store encrypted user information client-side.
+            Utilized Semantic UI React and React Sky for styling.
+
+            </p>
             <ul>
                 <li>
-                    Demo or Deployed Site
+                    <a href="https://over-under-app.herokuapp.com/">Live site (Eventually replace)</a>
                 </li>
                 <li>
-                    Front end Link
+                    <a href="https://github.com/elandau91/mod4-game-frontend">Github Frontend</a>
                 </li>
                 <li>
-                    Back end Link
+                    <a href="https://github.com/elandau91/mod4-game-backend">Github Backend</a>
                 </li>
             </ul>
             <br/>
         </div>
 
         <div>
-            <h4>
+            <h3>
                 Flatogatchi                
-            </h4>
+            </h3>
             <img src={tamo} alt="tamogatchi" />
-            <p>This is an image of the muppet chef, who I just love. That's why I centered a whole project around him</p>
+            <p>Virtual Pet app modeled after the 90's-famous Tomogatchis. Users can create and account, 'adopt' and name a monster, and save their new pet's progress.<br/>
+            The frontend was built with Vanilla Javascript and the backend was ruby on Rails.
+            </p>
             <ul>
                 <li>
-                    Demo or Deployed Site
+                    <a href="https://www.youtube.com/watch?v=phURZL6HX50&feature=emb_logo&ab_channel=LuisReyes">Luis' Demo (Eventually replace)</a>
                 </li>
                 <li>
-                    Front end Link
+                    <a href="https://github.com/brandongubitosa/FlatoGochi_FrontEnd">Github Frontend</a>
                 </li>
                 <li>
-                    Back end Link
+                    <a href="https://github.com/brandongubitosa/FlatoGachi">Github Backend</a>
                 </li>
             </ul>
             <br/>
