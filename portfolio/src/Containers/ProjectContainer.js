@@ -1,6 +1,6 @@
 import React from 'react'
 //import Project from '../Components/Project'
-import { Link, animateScroll } from "react-scroll"
+import { Link } from "react-scroll"
 import lifeletter from "../images/lifeletter.png"
 import quiz from "../images/quiz.png"
 import tamo from "../images/tamogatchi.png"
@@ -18,7 +18,7 @@ function ProjectContainer(){
               offset={70}
               duration={790}
               >
-                <Button>^^^About^^^</Button>
+                <Button name="triangle up" color="teal" centered="something"> ▲ ▲ ▲ About ▲ ▲ ▲</Button>
             </Link>
             
             <Segment>

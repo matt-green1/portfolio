@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, animateScroll } from "react-scroll"
+import { Link } from "react-scroll"
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
 import resume from "../images/resume.png"
@@ -20,7 +20,6 @@ class About extends React.Component {
     }
 
     render () {
-        console.log(`This is the current state in the render: ${this.state.mattStatus}`)
         return (
             <div id="about">
                 <Header as="h1" id="name">
@@ -120,7 +119,7 @@ class About extends React.Component {
                     offset={70}
                     duration={790}
                 >
-                    <Icon name="triangle down" color="red" centered={true}>\/ SCROLL DOWN</Icon>
+                    <Button name="triangle down" color="teal" centered="something"> ▼ ▼ ▼ Projects ▼ ▼ ▼</Button>
                 </Link>
                 
                 <br/><br/><br/>
@@ -138,67 +137,3 @@ class About extends React.Component {
 }
 
 export default About
-
-// backup of react pre semantic
-{/* <Header as="h1">🤟 Hey, I'm Matt!</Header>
-                
-                <h4>
-                    I'm a full stack developer based in nyc. I'm passionate about learning new technologies <br/>
-                    in service of building apps that explore the intersection of creativity and techlogy. <br/>
-                    I love building delightful, visually pleasant, intuitive apps. Finding new ways... 
-                </h4>
-                
-               
-                
-                {
-                this.state.mattStatus === null
-                
-                ?
-                <div>
-                    <img src={youngPicture} alt="youngpic"/>
-                    <h4> Interests</h4>
-                    <ul>
-                        <li>
-                            Dinosaurs
-                        </li>
-                        <li>
-                            Bike Riding / Legos
-                        </li>
-                        <li>
-                            The Knicks
-                        </li>
-                    </ul>
-                </div>
-                :
-                
-                <div>
-                    <img src={currentPicture} alt="currentpic"/>
-                    <h4> Interests</h4>
-                    <ul>
-                        <li>
-                            Audio Storytelling / Collaging
-                        </li>
-                        <li>
-                            Cooking
-                        </li>
-                        <li>
-                            Still the Knicks, sadly
-                        </li>
-                    </ul>
-                </div>
-                }
-
-                <button onClick={this.picChangeHandler}>Matt Then</button>
-                <button onClick={this.picChangeHandler}>Matt Now</button>
-                
-                <br/><br/><br/><br/>
-                <Link
-                    activeClass="active"
-                    to="projects"
-                    spy={true}
-                    smooth={true}
-                    offset={70}
-                    duration={790}
-                >
-                    <button>Scroll down</button>
-                </Link> */}

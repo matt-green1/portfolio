@@ -1,5 +1,5 @@
 import './App.css';
-import React, {Component} from "react"
+import React from "react"
 import NavBar from './Components/NavBar'
 import About from './Components/About'
 import ProjectContainer from './Containers/ProjectContainer'
@@ -9,13 +9,17 @@ class App extends React.Component {
     currentSection: "about"
   }  
   
-  handleNavSection = () => {
-    if(this.state.currentSection === "about"){
-      this.setState({currentSection:"projects"})
-    } else if (this.state.currentSection === "projects") {
+  handleNavSection = (name) => {
+    console.log("handle nav was called!!!!!!!!!!!!!")
+    if(name === "about"){
       this.setState({currentSection:"about"})
+    } else if (name === "projects") {
+      this.setState({currentSection: "projects"})
     }
+  }
 
+  manualScrollStateKeeper = () => {
+    console.log("eventually this will be somrhting that monitors where we are in the doc and changes state to match which section we're in")
   }
 
   render() {
