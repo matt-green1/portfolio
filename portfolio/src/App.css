@@ -9,7 +9,17 @@
 
 
 .icons {
-  width: 100px
+  width: 50px
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* fonts  */

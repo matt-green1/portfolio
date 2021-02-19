@@ -20,7 +20,7 @@ class NavBar extends React.Component {
     
     return(
       
-      <div>
+      <div id="nav">
           <List link>
             <List.Item active={this.aboutActivator()} onClick={this.props.handleNavSection}>
               <Link
@@ -48,34 +48,6 @@ class NavBar extends React.Component {
               </Link>
             </List.Item>
           </List>
-          
-          <ul>
-            <li>
-              <Link
-                  activeClass="active"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={70}
-                  duration={790}
-                  >
-                    <button>About</button>
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={790}
-                // delay={100}
-                >
-                  <button>Projects</button>
-              </Link>
-            </li>
-          </ul>
       </div>
       )
     }

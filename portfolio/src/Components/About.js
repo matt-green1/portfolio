@@ -5,6 +5,7 @@ import linkedin from "../images/linkedin.png"
 import resume from "../images/resume.png"
 import youngPicture from "../images/youngPicture.jpg"
 import currentPicture from "../images/currentPicture.jpg"
+import { Grid, Image, Header, List } from 'semantic-ui-react'
 
 class About extends React.Component {
     state = {
@@ -19,38 +20,30 @@ class About extends React.Component {
         console.log(`This is the current state in the render: ${this.state.mattStatus}`)
         return (
             <div id="about">
-                <h3>---------------HOME -----------------------</h3>
-                
                 <h1 id="name">
                     Matt Green
                 </h1>
                 
-                <div id="infobar">
-                    <h4>
-                        Ny, Ny
-                    </h4>
-                    <a href="https://linkedin.com/in/matthewgreen123" target="_blank">
-                        <img src={linkedin} alt="linkedin" className="icons"/>
-                    </a>
-                    <h3>LinkedIn</h3>
-                    
-                    <a href="https://github.com/matt-green1" target="_blank">
-                        <img src={github} alt="github" className="icons"/>
-                    </a>
-                    <h3>
-                        Github
-                    </h3>
+                <Grid divided='vertically'>
+                  <Grid.Row columns={3}>
+                    <Grid.Column>
+                      <Image src={linkedin} alt="linkedin" className="icons" href="https://linkedin.com/in/matthewgreen123" target="_blank"/>
+                      <Header as="h4">Linkedin</Header>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Image src={github} alt="github" className="icons" href="https://github.com/matt-green1" target="_blank"/>
+                      <Header as="h4">Github</Header>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Image src={resume} alt="resume" className="icons" href="https://google.com" target="_blank"/>
+                      <Header as="h4">Resume</Header>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
 
-                    <a href="https://google.com" target="_blank">
-                        <img src={resume} alt="resume" className="icons"/>
-                    </a>
-                    <h3>
-                        Resume
-                    </h3>
-                </div>
-                
+    
                 <br/>
-                
+
                 <h1>
                 🤟 Hey, I'm Matt!
                 </h1>
