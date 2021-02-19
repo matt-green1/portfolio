@@ -5,7 +5,7 @@ import linkedin from "../images/linkedin.png"
 import resume from "../images/resume.png"
 import youngPicture from "../images/youngPicture.jpg"
 import currentPicture from "../images/currentPicture.jpg"
-import { Grid, Image, Header, List } from 'semantic-ui-react'
+import { Grid, Image, Header, Icon, Button, List } from 'semantic-ui-react'
 
 class About extends React.Component {
     state = {
@@ -13,6 +13,7 @@ class About extends React.Component {
     }
 
     picChangeHandler = () => {
+        
         this.state.mattStatus === null ? this.setState({mattStatus: "mattNow"}) : this.setState({mattStatus: null})
     }
 
@@ -20,9 +21,9 @@ class About extends React.Component {
         console.log(`This is the current state in the render: ${this.state.mattStatus}`)
         return (
             <div id="about">
-                <h1 id="name">
+                <Header as="h1" id="name">
                     Matt Green
-                </h1>
+                </Header>
                 
                 <Grid divided='vertically'>
                   <Grid.Row columns={3}>
@@ -44,21 +45,104 @@ class About extends React.Component {
     
                 <br/>
 
-                <h1>
-                🤟 Hey, I'm Matt!
-                </h1>
+                <Grid divided='vertically'>
+                  <Grid.Row columns={2}>
+                    <Grid.Column>
+                      <Header as="h1">🤟 Hey, I'm Matt!</Header>
+                      <Header as="h4">
+                            I'm a full stack developer based in nyc. I'm passionate about learning new technologies
+                            in service of building apps that explore the intersection of creativity and techlogy.
+                            I love building delightful, visually pleasant, intuitive apps. Finding new ways... 
+                      </Header>
+                    </Grid.Column>
+                    <Grid.Column>
+                    {
+                        this.state.mattStatus === null
+                
+                        ?
 
+                        <div>
+                            <Image src={youngPicture} alt="youngpic" circular={true} size={"medium"}/>
+                            <Header as="h4">Interests</Header>
+                        
+                            <List bulleted={true}>
+                                <List.Item>
+                                    Dinosaurs
+                                </List.Item>
+                                <List.Item>
+                                    Bike Riding / Legos
+                                </List.Item>
+                                <List.Item>
+                                    The Knicks
+                                </List.Item>
+                            </List>
+                        
+                        </div>
+                        
+                        :
+                        
+                        <div>
+                            <Image src={currentPicture} alt="currentpic" circular={true} size={"medium"}/>
+                            <Header as="h4">Interests</Header>
+                            <List bulleted={true}>
+                                <List.Item>
+                                    Audio Storytelling / Collaging
+                                </List.Item>
+                                <List.Item>
+                                    Cooking
+                                </List.Item>
+                                <List.Item>
+                                    Still the Knicks, sadly
+                                </List.Item>
+                            </List>
+                        </div>
+                        }
+                        <br/>
+                        <Button onClick={this.picChangeHandler}>Matt Then</Button>
+                        <Button onClick={this.picChangeHandler}>Matt Now</Button>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+
+            
+                <br/><br/><br/><br/>
+                <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={70}
+                    duration={790}
+                >
+                    <Icon name="triangle down" color="red" centered={true}>\/ SCROLL DOWN</Icon>
+                </Link>
+                
+                <br/><br/><br/>
+                <p>
+                    {/* Add this back if you can make it stick together and be movable around the screen + jiggly */}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👨 <br/>
+                    &nbsp;&nbsp;&nbsp;🤟 👕 👍<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👖 <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👟👟
+                </p>
+
+            </div>
+        )
+    }
+}
+
+export default About
+
+// backup of react pre semantic
+{/* <Header as="h1">🤟 Hey, I'm Matt!</Header>
+                
                 <h4>
-                    I'm a full stack developer based in nyc. I'm passionate about learning new technologies in service of building apps that explroe the intersection of creativity and techlogy. I love building delightful, visually pleasant, intuitive apps. Finding new ways... 
+                    I'm a full stack developer based in nyc. I'm passionate about learning new technologies <br/>
+                    in service of building apps that explore the intersection of creativity and techlogy. <br/>
+                    I love building delightful, visually pleasant, intuitive apps. Finding new ways... 
                 </h4>
                 
-                <p>
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👨 <br/>
-                &nbsp;&nbsp;&nbsp;🤟 👕 👍<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👖 <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👟👟
-                </p>
+               
                 
                 {
                 this.state.mattStatus === null
@@ -111,11 +195,4 @@ class About extends React.Component {
                     duration={790}
                 >
                     <button>Scroll down</button>
-                </Link>
-
-            </div>
-        )
-    }
-}
-
-export default About
+                </Link> */}
