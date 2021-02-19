@@ -12,9 +12,11 @@ class About extends React.Component {
         mattStatus: null
     }
 
-    picChangeHandler = () => {
-        
-        this.state.mattStatus === null ? this.setState({mattStatus: "mattNow"}) : this.setState({mattStatus: null})
+    switchPicToCurrent = () => {   
+        if(this.state.mattStatus === null) {this.setState({mattStatus: "mattNow"})}
+    }
+    switchPicToYoung = () => {
+        if(this.state.mattStatus === "mattNow") {this.setState({mattStatus: null})}
     }
 
     render () {
@@ -48,7 +50,12 @@ class About extends React.Component {
                 <Grid divided='vertically'>
                   <Grid.Row columns={2}>
                     <Grid.Column>
-                      <Header as="h1">🤟 Hey, I'm Matt!</Header>
+                      <Header as="h1">
+                          <span id="wave">
+                          ✋
+                          </span>&nbsp;
+                           Hey, I'm Matt!
+                      </Header>
                       <Header as="h4">
                             I'm a full stack developer based in nyc. I'm passionate about learning new technologies
                             in service of building apps that explore the intersection of creativity and techlogy.
@@ -76,7 +83,6 @@ class About extends React.Component {
                                     The Knicks
                                 </List.Item>
                             </List>
-                        
                         </div>
                         
                         :
@@ -98,8 +104,8 @@ class About extends React.Component {
                         </div>
                         }
                         <br/>
-                        <Button onClick={this.picChangeHandler}>Matt Then</Button>
-                        <Button onClick={this.picChangeHandler}>Matt Now</Button>
+                        <Button onClick={this.switchPicToYoung}>Matt Then</Button>
+                        <Button onClick={this.switchPicToCurrent}>Matt Now</Button>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -119,7 +125,7 @@ class About extends React.Component {
                 
                 <br/><br/><br/>
                 <p>
-                    {/* Add this back if you can make it stick together and be movable around the screen + jiggly */}
+                    {/* Add this if you can make it stick together and be movable around the screen + jiggly */}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👨 <br/>
                     &nbsp;&nbsp;&nbsp;🤟 👕 👍<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👖 <br/>

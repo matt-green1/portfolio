@@ -12,7 +12,7 @@ class App extends React.Component {
   handleNavSection = () => {
     if(this.state.currentSection === "about"){
       this.setState({currentSection:"projects"})
-    } else {
+    } else if (this.state.currentSection === "projects") {
       this.setState({currentSection:"about"})
     }
 
