@@ -3,7 +3,7 @@
 }
 
 #name {
-  font-family: 'Windsor Pro Ultra Heavy';
+  font-family: 'Windsor Pro Bold';
   font-size: 100px;
 }
 
@@ -42,8 +42,14 @@
   100% { transform: rotate( 0.0deg) }
 }
 
+/* --------------- project container below ---------------- */
 
-/* --------------- fonts ---------------- */
+#projectcontainer {
+  border: 0px;
+}
+
+
+/* --------------- fonts below ---------------- */
 
 @font-face {
   font-family: 'Windsor Pro Bold';
