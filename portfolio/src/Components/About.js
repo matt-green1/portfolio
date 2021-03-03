@@ -56,9 +56,7 @@ class About extends React.Component {
                            Hey, I'm Matt!
                       </Header>
                       <Header as="h4">
-                            I'm a full stack developer based in nyc. I'm passionate about learning new technologies
-                            in service of building apps that explore the intersection of creativity and techlogy.
-                            I love building delightful, visually pleasant, intuitive apps. Finding new ways... 
+                            I'm a full-stack developer based in nyc. I'm passionate about using new technologies creatively to build delightful, intuitive experiences. I'm a jack of all trades, ready to use my varied experience/swissarmy like skillset to implement user focused, visually pleasant solutions.
                       </Header>
                     </Grid.Column>
                     <Grid.Column>
@@ -79,7 +77,7 @@ class About extends React.Component {
                                     Bike Riding / Legos
                                 </List.Item>
                                 <List.Item>
-                                    The Knicks
+                                    <a href="https://www.youtube.com/watch?v=cxqpcG01jcc&t=5s&ab_channel=MSGNetworks" target="_blank">The Knicks</a>
                                 </List.Item>
                             </List>
                         </div>
@@ -97,7 +95,7 @@ class About extends React.Component {
                                     Cooking
                                 </List.Item>
                                 <List.Item>
-                                    Still the Knicks, sadly
+                                    Still, <a href="https://clutchpoints.com/knicks-news-new-york-has-worst-record-in-nba-over-the-last-20-seasons/" target="_blank">sadly</a>, the Knicks
                                 </List.Item>
                             </List>
                         </div>
