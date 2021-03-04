@@ -49,13 +49,13 @@ class About extends React.Component {
                 <Grid divided='vertically'>
                   <Grid.Row columns={2}>
                     <Grid.Column>
-                      <Header as="h1">
+                      <Header as="h1" id="greeting">
                           <span id="wave">
                           ✋
                           </span>&nbsp;
                            Hey, I'm Matt!
                       </Header>
-                      <Header as="h4">
+                      <Header as="h4" id="blurb">
                             I'm a full-stack developer based in nyc. I'm passionate about using new technologies creatively to build delightful, intuitive experiences. I'm a jack of all trades, ready to use my varied experience/swissarmy like skillset to implement user focused, visually pleasant solutions.
                       </Header>
                     </Grid.Column>
@@ -67,7 +67,7 @@ class About extends React.Component {
 
                         <div>
                             <Image src={youngPicture} alt="youngpic" circular={true} size={"medium"}/>
-                            <Header as="h4">Interests</Header>
+                            <Header as="h4" id="interests">Interests</Header>
                         
                             <List bulleted={true}>
                                 <List.Item>

@@ -3,10 +3,27 @@
 }
 
 #name {
-  font-family: 'Windsor Pro Bold';
-  font-size: 100px;
+  font-family: 'Duera Expanded Black';
+  font-size: 77px;
 }
 
+#greeting {
+  font-family: 'Souvenir Light';
+}
+
+#blurb {
+  font-family: 'Souvenir Light';
+}
+
+#interests {
+  font-family: 'Souvenir Light';
+
+}
+
+.interestbullets {
+  font-family: 'Souvenir Light';
+
+}
 
 .icons {
   width: 50px
@@ -50,6 +67,32 @@
 
 
 /* --------------- fonts below ---------------- */
+
+ @font-face {
+  font-family: 'Duera Expanded Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Duera Expanded Black'), url('./fonts/duera-expanded-black.ttf') format('woff');
+  }
+
+
+@font-face {
+ font-family: 'GT Pressura Light';
+ font-style: normal;
+ font-weight: normal;
+ src: local('GT Pressura Light'), url('./fonts/gt-pressura-light.ttf') format('woff');
+ }
+
+
+@font-face {
+  font-family: 'Souvenir Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Souvenir Light'), url('./fonts/souvenir-light.otf') format('woff');
+  } 
+
+
+/* From final project below*/
 
 @font-face {
   font-family: 'Windsor Pro Bold';
