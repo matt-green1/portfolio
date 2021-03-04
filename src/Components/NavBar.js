@@ -28,7 +28,7 @@ class NavBar extends React.Component {
     return(
       <div id="nav">
           <List link >
-            <List.Item link="about" active={this.props.currentSection === "about"}  >
+            <List.Item link="about" active={this.props.currentSection === "about"} className="navButton"  >
               <Link
                 activeClass="active"
                 to="about"
@@ -43,7 +43,7 @@ class NavBar extends React.Component {
               </Link>
             </List.Item>
 
-            <List.Item active={this.props.currentSection === "projects"}  >
+            <List.Item active={this.props.currentSection === "projects"} className="navButton" >
               <Link
                 activeClass="active"
                 to="projects"

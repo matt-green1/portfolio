@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from "react-scroll"
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
-import resume from "../images/resume.png"
+import email from "../images/email.png"
 import youngPicture from "../images/youngPicture.jpg"
 import currentPicture from "../images/currentPicture.jpg"
-import { Grid, Image, Header, Icon, Button, List } from 'semantic-ui-react'
+import { Grid, Image, Header, Button, List } from 'semantic-ui-react'
 
 class About extends React.Component {
     state = {
@@ -28,17 +28,14 @@ class About extends React.Component {
                 
                 <Grid divided='vertically'>
                   <Grid.Row columns={3}>
-                    <Grid.Column>
-                      <Image src={linkedin} alt="linkedin" className="icons" href="https://linkedin.com/in/matthewgreen123" target="_blank"/>
-                      <Header as="h4">Linkedin</Header>
+                    <Grid.Column >
+                      <Image src={linkedin} alt="linkedin" className="icons" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
                     </Grid.Column>
                     <Grid.Column>
-                      <Image src={github} alt="github" className="icons" href="https://github.com/matt-green1" target="_blank"/>
-                      <Header as="h4">Github</Header>
+                      <Image src={github} alt="github" className="icons" id="github" href="https://github.com/matt-green1" target="_blank"/>
                     </Grid.Column>
                     <Grid.Column>
-                      <Image src={resume} alt="resume" className="icons" href="https://google.com" target="_blank"/>
-                      <Header as="h4">Resume</Header>
+                      <Image src={email} alt="email" className="icons" id="email" href="https://google.com" target="_blank"/>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -67,16 +64,16 @@ class About extends React.Component {
 
                         <div>
                             <Image src={youngPicture} alt="youngpic" circular={true} size={"medium"}/>
-                            <Header as="h4" id="interests">Interests</Header>
+                            <Header as="h4" className="interestsheader">Interests</Header>
                         
                             <List bulleted={true}>
-                                <List.Item>
+                                <List.Item className="interestsbullets">
                                     Dinosaurs
                                 </List.Item>
-                                <List.Item>
+                                <List.Item className="interestsbullets">
                                     Bike Riding / Legos
                                 </List.Item>
-                                <List.Item>
+                                <List.Item className="interestsbullets">
                                     <a href="https://www.youtube.com/watch?v=cxqpcG01jcc&t=5s&ab_channel=MSGNetworks" target="_blank">The Knicks</a>
                                 </List.Item>
                             </List>
@@ -86,15 +83,15 @@ class About extends React.Component {
                         
                         <div>
                             <Image src={currentPicture} alt="currentpic" circular={true} size={"medium"}/>
-                            <Header as="h4">Interests</Header>
+                            <Header as="h4" className="interestsheader">Interests</Header>
                             <List bulleted={true}>
-                                <List.Item>
+                                <List.Item className="interestsbullets">
                                     Audio Storytelling / Collaging
                                 </List.Item>
-                                <List.Item>
+                                <List.Item className="interestsbullets">
                                     Cooking
                                 </List.Item>
-                                <List.Item>
+                                <List.Item className="interestsbullets">
                                     Still, <a href="https://clutchpoints.com/knicks-news-new-york-has-worst-record-in-nba-over-the-last-20-seasons/" target="_blank">sadly</a>, the Knicks
                                 </List.Item>
                             </List>
