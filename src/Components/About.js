@@ -62,8 +62,16 @@ class About extends React.Component {
                 
                         ?
 
+                        // from image below: circular={true} size={"medium"}
                         <div>
-                            <Image src={youngPicture} alt="youngpic" circular={true} size={"medium"}/>
+                            <div className="box">
+                                <div className="spin-container">
+                                    <div className="shape">
+                                        <div className="bgthenimage"></div>
+                                        {/* <Image src={youngPicture} alt="youngpic" className="mattpic"/> */}
+                                    </div>
+                                </div>
+                            </div>
                             <Header as="h4" className="interestsheader">Interests</Header>
                         
                             <List bulleted={true}>
@@ -82,7 +90,14 @@ class About extends React.Component {
                         :
                         
                         <div>
-                            <Image src={currentPicture} alt="currentpic" circular={true} size={"medium"}/>
+                            <div className="box">
+                                <div className="spin-container">
+                                    <div className="shape">
+                                        <div className="bgnowimage"></div>
+                                            {/* <Image src={currentPicture} alt="currentpic"/> */}
+                                        </div>
+                                    </div>
+                            </div>
                             <Header as="h4" className="interestsheader">Interests</Header>
                             <List bulleted={true}>
                                 <List.Item className="interestsbullets">
