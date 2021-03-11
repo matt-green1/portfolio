@@ -17,7 +17,7 @@ function ProjectContainer(){
               offset={0}
               duration={790}
               >
-                <Button name="triangle up" color="teal"> ▲ ▲ ▲ About ▲ ▲ ▲</Button>
+                <Button name="triangle up" className="scrollbutton"> ▲ ▲ ▲ About ▲ ▲ ▲</Button>
             </Link>
             
             <Header as="h1" textAlign="center"> Projects</Header>

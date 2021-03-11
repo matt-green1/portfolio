@@ -50,7 +50,7 @@ class About extends React.Component {
                           <span id="wave">
                           ✋
                           </span>&nbsp;
-                           Hey, I'm Matt!
+                           Hey, I'm Matt!                   
                       </Header>
                       <Header as="h4" id="blurb">
                             I'm a full-stack developer based in nyc. I'm passionate about using new technologies creatively to build delightful, intuitive experiences. I'm a jack of all trades, ready to use my varied experience/swissarmy like skillset to implement user focused, visually pleasant solutions.
@@ -79,7 +79,7 @@ class About extends React.Component {
                                     Dinosaurs
                                 </List.Item>
                                 <List.Item className="interestsbullets">
-                                    Bike Riding / Legos
+                                    Legos / "Collecting" shiny objects from the sidewalk
                                 </List.Item>
                                 <List.Item className="interestsbullets">
                                     <a href="https://www.youtube.com/watch?v=cxqpcG01jcc&t=5s&ab_channel=MSGNetworks" target="_blank">The Knicks</a>
@@ -113,8 +113,8 @@ class About extends React.Component {
                         </div>
                         }
                         <br/>
-                        <Button onClick={this.switchPicToYoung}>Matt Then</Button>
-                        <Button onClick={this.switchPicToCurrent}>Matt Now</Button>
+                        <Button onClick={this.switchPicToYoung} className="interestsbutton">Matt Then</Button>
+                        <Button onClick={this.switchPicToCurrent} className="interestsbutton">Matt Now</Button>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -129,17 +129,11 @@ class About extends React.Component {
                     offset={70}
                     duration={790}
                 >
-                    <Button name="triangle down" color="teal" centered="something"> ▼ ▼ ▼ Projects ▼ ▼ ▼</Button>
+                    <Button name="triangle down" centered="something" className="scrollbutton"> ▼ ▼ ▼ Projects ▼ ▼ ▼</Button>
                 </Link>
                 
                 <br/><br/><br/>
-                <p>
-                    {/* Add this if you can make it stick together and be movable around the screen + jiggly */}
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👨 <br/>
-                    &nbsp;&nbsp;&nbsp;🤟 👕 👍<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👖 <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👟👟
-                </p>
+                
 
             </div>
         )

@@ -8,7 +8,7 @@ class App extends React.Component {
   state = {
     currentSection: "about"
   }  
-  
+    
   handleNavSection = (name) => {
     console.log("handle nav was called!!!!!!!!!!!!!")
     if(name === "about"){

@@ -38,6 +38,7 @@ class NavBar extends React.Component {
                 duration={790}
                 name="about"
                 onClick={(e) => {this.onItemChange(e)}}
+                id="aboutnav"
                >
                   About
               </Link>
@@ -53,6 +54,7 @@ class NavBar extends React.Component {
                 duration={790}
                 name="projects"
                 onClick={(e) => {this.onItemChange(e)}}
+                id="projectsnav"
                 // delay={100}
                >
                   Projects
