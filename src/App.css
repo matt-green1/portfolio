@@ -7,15 +7,55 @@
 #name {
   font-family: 'Duera Expanded Black';
   font-size: 57px;
-  color: #555B6E
+  color: #093B50
 }
 
-a.ui.image.icons img {
+a.ui.image.hvr-skew img {
   width: 50px;
 }
 
+.hvr-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-skew:hover, .hvr-skew:focus, .hvr-skew:active {
+  -webkit-transform: skew(-7deg);
+  transform: skew(-7deg);
+}
 
-#linkedin:hover {
+/* Skew Forward */
+.hvr-skew-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.hvr-skew-forward:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active {
+  -webkit-transform: skew(-7deg);
+  transform: skew(-7deg);
+}
+
+/* ------------ bob of icons ------------- */
+
+
+
+
+
+/* #linkedin:hover {
   content:url("./images/linkedingif.gif");
   width: 50px;
 }
@@ -29,7 +69,7 @@ a.ui.image.icons img {
   content:url("./images/mailboxgif.gif");
   width: 50px;
   border-radius: 90px;
-}
+} */
 
 
 #nav {
@@ -125,12 +165,12 @@ img.ui.image.mattpic {
 
 #greeting {
   font-family: 'Souvenir Light';
-  color:#555B6E;
+  color:#093B50;
 }
 
 #blurb {
   font-family: 'Souvenir Light';
-  color:#555B6E;
+  color:#093B50;
 }
 
 #wave {
@@ -158,23 +198,23 @@ img.ui.image.mattpic {
 
 .ui.header.interestsheader {
   font-family: 'Souvenir Light';
-  color: #555B6E
+  color: #093B50
 }
 
 .interestsbullets {
   font-family: 'Souvenir Light';
-  color: #555B6E
+  color: #093B50
 }
 
 .button.ui.button.interestsbutton {
   font-family: 'Souvenir Light';
-  background-color:#555B6E;
+  background-color:#093B50;
   color: white
 }
 
 .button.ui.button.scrollbutton {
   font-family: 'Souvenir Light';
-  background-color:#555B6E;
+  background-color:#093B50;
   color: white
 }
 

@@ -29,13 +29,13 @@ class About extends React.Component {
                 <Grid divided='vertically'>
                   <Grid.Row columns={3}>
                     <Grid.Column >
-                      <Image src={linkedin} alt="linkedin" className="icons" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
+                      <Image src={linkedin} alt="linkedin" className="hvr-skew" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
                     </Grid.Column>
                     <Grid.Column>
-                      <Image src={github} alt="github" className="icons" id="github" href="https://github.com/matt-green1" target="_blank"/>
+                      <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
                     </Grid.Column>
                     <Grid.Column>
-                      <Image src={email} alt="email" className="icons" id="email" href="https://google.com" target="_blank"/>
+                      <Image src={email} alt="email" className="hvr-skew" id="email" href="https://google.com" target="_blank"/>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
