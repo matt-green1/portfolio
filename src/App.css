@@ -12,8 +12,26 @@
 
 #emailsymbol {
   font-family: 'Vary Light';
-  font-size: 45px;
+  font-size: 30px;
   color: #093B50;
+  margin-top: -9px;
+}
+
+#linkedin {
+  width: 30px;
+}
+
+#github {
+  width: 38px;
+  margin-top: -3px;
+}
+
+#linkiconrow {
+  width: 13%!important;
+}
+
+div.column.linkicons {
+  /* make the width smaller here */
 }
 
 a.ui.image.hvr-skew img {

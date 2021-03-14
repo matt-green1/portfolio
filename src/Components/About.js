@@ -27,14 +27,14 @@ class About extends React.Component {
                 </Header>
                 
                 <Grid divided='vertically'>
-                  <Grid.Row columns={3}>
-                    <Grid.Column >
+                  <Grid.Row columns={3} id="linkiconrow">
+                    <Grid.Column className="linkicons">
                       <Image src={linkedin} alt="linkedin" className="hvr-skew" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
                     </Grid.Column>
-                    <Grid.Column>
+                    <Grid.Column className="linkicons">
                       <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
                     </Grid.Column>
-                    <Grid.Column>
+                    <Grid.Column className="linkicons">
                       <Header as="h1" id="emailsymbol" className="hvr-skew">@</Header>
                       {/* <Image src={email} alt="email" className="hvr-skew" id="email" href="https://google.com" target="_blank"/> */}
                     </Grid.Column>
