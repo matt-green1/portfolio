@@ -130,7 +130,7 @@ class About extends React.Component {
                     offset={70}
                     duration={790}
                 >
-                    <Button name="triangle down" centered="something" className="scrollbutton"> ▼ ▼ ▼ Projects ▼ ▼ ▼</Button>
+                    <Button name="triangle down" className="scrollbutton"> ▼ ▼ ▼ Projects ▼ ▼ ▼</Button>
                 </Link>
                 
                 <br/><br/><br/>
