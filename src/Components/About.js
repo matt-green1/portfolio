@@ -35,7 +35,8 @@ class About extends React.Component {
                       <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
                     </Grid.Column>
                     <Grid.Column>
-                      <Image src={email} alt="email" className="hvr-skew" id="email" href="https://google.com" target="_blank"/>
+                      <Header as="h1" id="emailsymbol" className="hvr-skew">@</Header>
+                      {/* <Image src={email} alt="email" className="hvr-skew" id="email" href="https://google.com" target="_blank"/> */}
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -50,7 +51,7 @@ class About extends React.Component {
                           <span id="wave">
                           ✋
                           </span>&nbsp;
-                           Hey, I'm Matt!                   
+                           Hey, I'm Matt!              
                       </Header>
                       <Header as="h4" id="blurb">
                             I'm a full-stack developer based in nyc. I'm passionate about using new technologies creatively to build delightful, intuitive experiences. I'm a jack of all trades, ready to use my varied experience/swissarmy like skillset to implement user focused, visually pleasant solutions.

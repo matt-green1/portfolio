@@ -10,6 +10,12 @@
   color: #093B50
 }
 
+#emailsymbol {
+  font-family: 'Vary Light';
+  font-size: 45px;
+  color: #093B50;
+}
+
 a.ui.image.hvr-skew img {
   width: 50px;
 }
@@ -225,6 +231,13 @@ img.ui.image.mattpic {
 }
 
 /* --------------- Fonts below ---------------- */
+
+@font-face {
+  font-family: 'Vary Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Vary Light'), url('./fonts/varylight.woff') format('woff');
+  }
 
 @font-face {
 font-family: 'Duera Expanded Black';
