@@ -7,7 +7,8 @@
 #name {
   font-family: 'Duera Expanded Black';
   font-size: 57px;
-  color: #093B50
+  color: #093B50;
+  padding: 50px 0px 0px 50px;
 }
 
 #emailsymbol {
@@ -23,13 +24,12 @@
 
 #github {
   width: 32px;
-  /* margin-top: -1px; */
 }
 
 #linkiconrow {
   width: 13%!important;
+  margin-left: 50px;
 }
-
 
 .ui.grid>[class*="three column"].row>.column.linkicons {
   width: 60px!important;
@@ -74,34 +74,13 @@ a.ui.image.hvr-skew img {
   transform: skew(-7deg);
 }
 
-/* ------------ bob of icons ------------- */
-
-
-
-
-
-/* #linkedin:hover {
-  content:url("./images/linkedingif.gif");
-  width: 50px;
-}
-
-#github:hover {
-  content:url("./images/githubgif.gif");
-  width: 50px;
-}
-
-#email:hover {
-  content:url("./images/mailboxgif.gif");
-  width: 50px;
-  border-radius: 90px;
-} */
-
+/* ------------ skew of icons above ------------- */
 
 #nav {
   position: fixed;
-  top: 0;
-  width: 80%;
-  height: 9rem;
+  top: 65px;
+  width: 90%;
+  /* height: 9rem; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -112,17 +91,81 @@ a.ui.image.hvr-skew img {
   font-size: 22px;
 }
 
-/* #aboutnav {
-  color: green;
-} */
+/* ------- Blurb section below ---------- */
 
-/* css for original young current mat pics
-img.ui.image.mattpic {
-  width: 300%;
-  replaced with bacckground image with animation
-} */
+#blurbcolumn {
+  margin: 0px 30px 0px 30px
+}
 
-/* background instead of Image animation below */
+#greeting {
+  font-family: 'Souvenir Light';
+  color:#093B50;
+}
+
+#blurb {
+  font-family: 'Souvenir Light';
+  color:#093B50;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+#wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 3.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: 1;  /* Never stop waving :) */
+  animation-delay: 0s;
+  transform-origin: 30% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0.0deg) }
+   10% { transform: rotate(-8.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(8.0deg) }
+   30% { transform: rotate(-8.0deg) }
+   40% { transform: rotate(8.0deg) }
+   50% { transform: rotate(-10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+/* --------------- Interests section below --------------- */
+
+#aboutsection {
+  /* justify-content: center; */
+}
+
+#interestscolumn {
+  margin: 0px 30px 0px 30px
+}
+
+.ui.header.interestsheader {
+  font-family: 'Souvenir Light';
+  color: #093B50
+}
+
+.interestsbullets {
+  font-family: 'Souvenir Light';
+  color: #093B50
+}
+
+.button.ui.button.interestsbutton {
+  font-family: 'Souvenir Light';
+  background-color:#093B50;
+  color: white;
+}
+
+.button.ui.button.scrollbutton {
+  font-family: 'Souvenir Light';
+  background-color:#093B50;
+  color: white;
+  display: flex;
+  margin: auto;
+}
+
+
+/* Picture blob for interests */
 .bgthenimage {
   width: 142%;
   height: 142%;
@@ -186,65 +229,6 @@ img.ui.image.mattpic {
   }
 }
 
-/* --------------- Blurb section below --------------- */
-
-#greeting {
-  font-family: 'Souvenir Light';
-  color:#093B50;
-}
-
-#blurb {
-  font-family: 'Souvenir Light';
-  color:#093B50;
-}
-
-#wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: 2;  /* Never stop waving :) */
-  animation-delay: 0s;
-  transform-origin: 30% 70%;       /* Pivot around the bottom-left palm */
-  display: inline-block;
-
-}
-
-@keyframes wave-animation {
-    0% { transform: rotate(0.0deg) }
-   10% { transform: rotate(-8.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(8.0deg) }
-   30% { transform: rotate(-8.0deg) }
-   40% { transform: rotate(8.0deg) }
-   50% { transform: rotate(-10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
-}
-
-/* --------------- Interests section below --------------- */
-
-.ui.header.interestsheader {
-  font-family: 'Souvenir Light';
-  color: #093B50
-}
-
-.interestsbullets {
-  font-family: 'Souvenir Light';
-  color: #093B50
-}
-
-.button.ui.button.interestsbutton {
-  font-family: 'Souvenir Light';
-  background-color:#093B50;
-  color: white;
-}
-
-.button.ui.button.scrollbutton {
-  font-family: 'Souvenir Light';
-  background-color:#093B50;
-  color: white;
-  display: flex;
-  margin: auto;
-}
-
 /* --------------- Project container below ---------------- */
 
 #projectcontainer {
@@ -253,6 +237,7 @@ img.ui.image.mattpic {
 
 #projectgrid {
   justify-content: center;
+  margin-bottom: 175px;
 }
 
 #projectsheader {
@@ -260,16 +245,11 @@ img.ui.image.mattpic {
   color: #093B50
 }
 
-.projectcolumn {
-  margin: 0px 0px 0px 0px!important;
-  /* padding: 0px 0px 0px 0px!important; */
-  display: flex;
+.ui.grid>[class*="three column"].row>.column.projectcolumn {
+  width: 20%!important;
+  margin: 0px 45px 0px 45px!important;
 }
 
-#projectrow {
-  width: 900px!important;
-  flex-wrap: nowrap;
-}
 
 h2.ui.header.projecttitle {
   font-family: 'Souvenir Light';

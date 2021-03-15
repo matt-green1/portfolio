@@ -1,5 +1,4 @@
 import React from 'react'
-//import Project from '../Components/Project'
 import { Link } from "react-scroll"
 import lifeletter from "../images/lifeletter.png"
 import quiz from "../images/quiz.png"
@@ -23,9 +22,9 @@ function ProjectContainer(){
             <Header as="h1" textAlign="center" id="projectsheader"> Projects</Header>
             
             <Segment id="projectcontainer">
-                <Grid divided='vertically' id="projectgrid">
+                <Grid divided='vertically' id="projectgrid" stackable={true} >
                   <Grid.Row columns={3} id="projectrow">
-                    <Grid.Column className="projectcolumn">
+                    <Grid.Column className="projectcolumn" >
                       <Image src={lifeletter} alt="lifeletter" />
                       <Header as="h2" className="projecttitle" >LifeLetter</Header>
                         <p className="projectblurb">
