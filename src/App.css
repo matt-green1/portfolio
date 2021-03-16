@@ -9,6 +9,7 @@
   font-size: 57px;
   color: #093B50;
   padding: 50px 0px 0px 50px;
+  margin-bottom: 0px;
 }
 
 #emailsymbol {
@@ -74,7 +75,7 @@ a.ui.image.hvr-skew img {
   transform: skew(-7deg);
 }
 
-/* ------------ skew of icons above ------------- */
+/* ------------ Nav section below ------------- */
 
 #nav {
   position: fixed;
@@ -91,7 +92,14 @@ a.ui.image.hvr-skew img {
   font-size: 22px;
 }
 
-/* ------- Blurb section below ---------- */
+/* --------- General about section below ------------ */
+
+#aboutgrid {
+  margin-top: 65px;
+  margin-bottom: 95px;
+}
+
+  /* ------- Blurb section below ---------- */
 
 #blurbcolumn {
   margin: 0px 30px 0px 30px
@@ -100,18 +108,19 @@ a.ui.image.hvr-skew img {
 #greeting {
   font-family: 'Souvenir Light';
   color:#093B50;
+  font-size: 33px;
 }
 
 #blurb {
   font-family: 'Souvenir Light';
   color:#093B50;
-  line-height: 32px;
-  font-size: 20px;
+  line-height: 49px;
+  font-size: 23px;
 }
 
 #wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 3.5s;        /* Change to speed up or slow down */
+  animation-duration: 4.5s;        /* Change to speed up or slow down */
   animation-iteration-count: 1;  /* Never stop waving :) */
   animation-delay: 0s;
   transform-origin: 30% 70%;       /* Pivot around the bottom-left palm */
@@ -231,6 +240,12 @@ a.ui.image.hvr-skew img {
 
 /* --------------- Project container below ---------------- */
 
+#projects {
+  margin-top: 150px;
+}
+
+
+
 #projectcontainer {
   border: 0px;
 }
@@ -238,11 +253,12 @@ a.ui.image.hvr-skew img {
 #projectgrid {
   justify-content: center;
   margin-bottom: 175px;
+  
 }
 
 #projectsheader {
   font-family: 'Souvenir Light';
-  color: #093B50
+  color: #093B50;
 }
 
 .ui.grid>[class*="three column"].row>.column.projectcolumn {

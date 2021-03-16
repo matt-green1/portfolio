@@ -45,8 +45,8 @@ class About extends React.Component {
     
                 <br/>
                 <div id="aboutsection">
-                    <Grid divided='vertically' stackable={true}>
-                    <Grid.Row columns={2} centered={true}>
+                    <Grid divided='vertically' stackable={true} id="aboutgrid">
+                    <Grid.Row columns={2} centered={true} >
                         <Grid.Column width={6.} id="blurbcolumn">
                         <Header as="h1" id="greeting">
                             <span id="wave">
@@ -81,7 +81,10 @@ class About extends React.Component {
                                         Dinosaurs
                                     </List.Item>
                                     <List.Item className="interestsbullets">
-                                        Legos / "Collecting" shiny objects from the sidewalk
+                                        Legos
+                                    </List.Item>
+                                    <List.Item className="interestsbullets">
+                                        "Collecting" shiny objects from sidewalk
                                     </List.Item>
                                     <List.Item className="interestsbullets">
                                         <a href="https://www.youtube.com/watch?v=cxqpcG01jcc&t=5s&ab_channel=MSGNetworks" target="_blank">The Knicks</a>
@@ -103,10 +106,13 @@ class About extends React.Component {
                                 <Header as="h4" className="interestsheader">Interests</Header>
                                 <List bulleted={true}>
                                     <List.Item className="interestsbullets">
-                                        Audio Storytelling / Collaging
+                                        Cooking
                                     </List.Item>
                                     <List.Item className="interestsbullets">
-                                        Cooking
+                                        Boardgames
+                                    </List.Item>
+                                    <List.Item className="interestsbullets">
+                                        Building & Designing web apps
                                     </List.Item>
                                     <List.Item className="interestsbullets">
                                         Still, <a href="https://clutchpoints.com/knicks-news-new-york-has-worst-record-in-nba-over-the-last-20-seasons/" target="_blank">sadly</a>, the Knicks
@@ -131,7 +137,7 @@ class About extends React.Component {
                     offset={70}
                     duration={790}
                 >
-                    <Button name="triangle down" className="scrollbutton"> ↓ &nbsp;P&nbsp; r&nbsp; o&nbsp; j&nbsp; e&nbsp; c&nbsp; t&nbsp; s&nbsp; ↓</Button>
+                    <Button name="triangle down" className="scrollbutton"> ↓ &nbsp;&nbsp;&nbsp;P&nbsp; r&nbsp; o&nbsp; j&nbsp; e&nbsp; c&nbsp; t&nbsp; s&nbsp;&nbsp;&nbsp; ↓</Button>
                 </Link>
 
                 <br/><br/><br/>
