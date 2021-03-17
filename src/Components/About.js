@@ -54,75 +54,27 @@ class About extends React.Component {
                             </span>&nbsp;
                             Hey, I'm Matt!              
                         </Header>
+                        
+                        
                         <Header as="h4" id="blurb">
                                 I'm a full-stack developer based in nyc. I'm passionate about using new technologies to build delightful, intuitive web apps. I'm a jack of all trades, ready to use my swiss-army-knife-like skillset to tackle tough problems and implement user focused, visually pleasant solutions.
                         </Header>
+
+
                         </Grid.Column>
                         <Grid.Column width={5} id="interestscolumn">
-                        {
-                            this.state.mattStatus === null
-                    
-                            ?
-
-                            // from image below: circular={true} size={"medium"}
-                            <div>
-                                <div className="box">
-                                    <div className="spin-container">
-                                        <div className="shape">
-                                            <div className="bgthenimage"></div>
-                                            {/* <Image src={youngPicture} alt="youngpic" className="mattpic"/> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                <Header as="h4" className="interestsheader">Interests</Header>
-                            
-                                <List bulleted={true}>
-                                    <List.Item className="interestsbullets">
-                                        Dinosaurs
-                                    </List.Item>
-                                    <List.Item className="interestsbullets">
-                                        Legos
-                                    </List.Item>
-                                    <List.Item className="interestsbullets">
-                                        "Collecting" shiny objects from sidewalk
-                                    </List.Item>
-                                    <List.Item className="interestsbullets">
-                                        <a href="https://www.youtube.com/watch?v=cxqpcG01jcc&t=5s&ab_channel=MSGNetworks" target="_blank">The Knicks</a>
-                                    </List.Item>
-                                </List>
-                            </div>
-                            
-                            :
-                            
-                            <div>
-                                <div className="box">
+                            <div className="box">
                                     <div className="spin-container">
                                         <div className="shape">
                                             <div className="bgnowimage"></div>
                                                 {/* <Image src={currentPicture} alt="currentpic"/> */}
-                                            </div>
                                         </div>
-                                </div>
-                                <Header as="h4" className="interestsheader">Interests</Header>
-                                <List bulleted={true}>
-                                    <List.Item className="interestsbullets">
-                                        Cooking
-                                    </List.Item>
-                                    <List.Item className="interestsbullets">
-                                        Boardgames
-                                    </List.Item>
-                                    <List.Item className="interestsbullets">
-                                        Building & Designing web apps
-                                    </List.Item>
-                                    <List.Item className="interestsbullets">
-                                        Still, <a href="https://clutchpoints.com/knicks-news-new-york-has-worst-record-in-nba-over-the-last-20-seasons/" target="_blank">sadly</a>, the Knicks
-                                    </List.Item>
-                                </List>
+                                    </div>
                             </div>
-                            }
+
+                        
                             <br/>
-                            <Button onClick={this.switchPicToYoung} className="interestsbutton">Matt Then</Button>
-                            <Button onClick={this.switchPicToCurrent} className="interestsbutton">Matt Now</Button>
+                            
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>
