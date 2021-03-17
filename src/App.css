@@ -118,6 +118,11 @@ a.ui.image.hvr-skew img {
   font-size: 23px;
 }
 
+#pigemoji {
+  font-size: 22px;
+  margin-left: 7px;
+}
+
 #wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
   animation-duration: 4.5s;        /* Change to speed up or slow down */

@@ -5,18 +5,26 @@ import linkedin from "../images/linkedin.png"
 import email from "../images/email.png"
 import youngPicture from "../images/youngPicture.jpg"
 import currentPicture from "../images/currentPicture.jpg"
-import { Grid, Image, Header, Button, List } from 'semantic-ui-react'
+import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 
 class About extends React.Component {
     state = {
-        mattStatus: null
+        blurbStatus: null
     }
 
-    switchPicToCurrent = () => {   
-        if(this.state.mattStatus === null) {this.setState({mattStatus: "mattNow"})}
-    }
-    switchPicToYoung = () => {
-        if(this.state.mattStatus === "mattNow") {this.setState({mattStatus: null})}
+    // switchBlurbToPig = () => {   
+    //     if(this.state.blurbStatus === null) {this.setState({blurbStatus: "pig"})}
+    // }
+    // switchBlurbToEnglish = () => {
+    //     if(this.state.blurbStatus === "pig") {this.setState({blurbStatus: null})}
+    // }
+
+    switchBlurb = () => {   
+        if(this.state.blurbStatus === null) {
+            this.setState({blurbStatus: "pig"})
+        } else {
+            this.setState({blurbStatus: null})
+        }
     }
 
     render () {
@@ -55,10 +63,32 @@ class About extends React.Component {
                             Hey, I'm Matt!              
                         </Header>
                         
+
+                        {/* PL Translator: http://www.snowcrest.net/donnelly/piglatin.html */}
+                        {
+                            this.state.blurbStatus === null
+                            
+                            ?
+                                <Header as="h4" id="blurb">
+                                    I'm a full-stack developer based in nyc. I'm passionate about using new technologies to build delightful, intuitive web apps. I'm a jack of all trades, ready to use my swiss-army-knife-like skillset to tackle tough problems and implement user focused, visually pleasant solutions.
+                                </Header>
+                            :
+                                <Header as="h4" id="blurb">
+                                    I'mway away ullfay-ackstay eveloperday asedbay inway ycnay. I'mway assionatepay aboutway usingway ewnay echnologiestay otay uildbay elightfulday, intuitiveway ebway appsway. I'mway away ackjay ofway allway adestray, eadyray otay useway ymay isssway-armyway-ifeknay-ikelay illsetskay otay ackletay oughtay oblemspray andway implementway userway ocusedfay, isuallyvay easantplay olutionssay.                                
+                                </Header>
+                            }
                         
-                        <Header as="h4" id="blurb">
-                                I'm a full-stack developer based in nyc. I'm passionate about using new technologies to build delightful, intuitive web apps. I'm a jack of all trades, ready to use my swiss-army-knife-like skillset to tackle tough problems and implement user focused, visually pleasant solutions.
-                        </Header>
+                    
+                        <Checkbox 
+                                    className="finalizetoggle"
+                                    toggle
+                                    onChange={this.switchBlurb}
+                                    checked={this.state.blurbStatus}
+                                >
+                                    &nbsp;&nbsp;🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖            
+                        </Checkbox><span id="pigemoji">🐖</span>
+                        
+                
 
 
                         </Grid.Column>
