@@ -2,6 +2,39 @@
   text-align: center;
 }
 
+.page-header {
+  background-color:#b8cbd1!important;
+  /* background-image: url('./images/youngPicture.jpg');  */
+  height: 200vh;
+  z-index: -1;
+}
+
+.page-header:after {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+  content: "";
+  animation: grain 18s steps(10) infinite;
+  position: fixed;
+  height: 300%;
+  width: 300%;
+  top: -110%;
+  left: -50%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
 /* --------------- Top section below --------------- */
 
 #name {

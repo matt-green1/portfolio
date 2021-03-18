@@ -113,17 +113,6 @@ class About extends React.Component {
                             }
                         
                     
-                        {/* <Checkbox 
-                                    className="pigtoggle"
-                                    toggle
-                                    onChange={this.switchBlurb}
-                                    checked={this.state.blurbStatus}
-                                >
-                                    &nbsp;&nbsp;🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖            
-                        </Checkbox><span id="pigemoji">🐖</span>
-                         */}
-                
-
 
                         </Grid.Column>
                         <Grid.Column width={5} id="interestscolumn">
