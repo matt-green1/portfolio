@@ -95,14 +95,14 @@ a.ui.image.hvr-skew img {
 /* --------- General about section below ------------ */
 
 #aboutgrid {
-  margin-top: 65px;
+  margin-top: 85px;
   margin-bottom: 95px;
 }
 
   /* ------- Blurb section below ---------- */
 
 #blurbcolumn {
-  margin: 0px 30px 0px 30px
+  margin: 0px 0px 0px 0px;
 }
 
 #greeting {
@@ -119,9 +119,43 @@ a.ui.image.hvr-skew img {
 }
 
 #pigemoji {
-  font-size: 22px;
-  margin-left: 7px;
+  font-size: 19px;
+  margin-left: 1px;
+  /* margin: 0; */
+  /* position: absolute; */
+  /* top: 20%; */
 }
+
+#pigspan {
+  /* padding-left: 200px; */
+  position:absolute;
+  left: 500px;
+}
+
+.ui.toggle.checkbox.pigtoggle {
+  transform: scale(.75);
+  position: relative;
+  top: 5px;
+}
+
+/* #pigtoggle {
+  background: red;
+} */
+
+/* .ui.toggle.checkbox.pigtoggle .box:before, .ui.toggle.checkbox.pigtoggle label:before {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 1;
+  transform: none;
+  border: none;
+  top: 0;
+  background: red;
+  box-shadow: none;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 500rem
+} */
 
 #wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -182,6 +216,8 @@ a.ui.image.hvr-skew img {
 .box {
   width: 225px;
   height: 225px;
+  display: flex;
+  margin: auto
 }
 
 .spin-container {
