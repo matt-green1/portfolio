@@ -24,7 +24,8 @@ class App extends React.Component {
 
   render() {
       return (
-        <div class="page-header">
+        <div >
+          <div class="page-header"></div>
           <NavBar handleNavSection={this.handleNavSection} currentSection={this.state.currentSection}/>
           <About handleNavSection={this.handleNavSection}/>
           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

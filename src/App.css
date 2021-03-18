@@ -2,23 +2,20 @@
   text-align: center;
 }
 
-.page-header {
-  background-color:#b8cbd1!important;
-  /* background-image: url('./images/youngPicture.jpg');  */
-  height: 200vh;
-  z-index: -1;
+body {
+  background: #CFD3E0 !important;
 }
 
-.page-header:after {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+.page-header::before {
+  background-image: url('./images/textures/old_moon.png');
   content: "";
-  animation: grain 18s steps(10) infinite;
+  animation: grain 8s steps(10) infinite;
   position: fixed;
   height: 300%;
   width: 300%;
   top: -110%;
   left: -50%;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -283,7 +280,11 @@ a.ui.image.hvr-skew img {
 #projectgrid {
   justify-content: center;
   margin-bottom: 175px;
-  
+  background: transparent;
+}
+
+div#projectcontainer.ui.segment {
+  background: transparent;
 }
 
 #projectsheader {
