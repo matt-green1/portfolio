@@ -138,7 +138,7 @@ class About extends React.Component {
 
                         
                             <br/>
-                            
+                            <input type="range" min="1" max="100"></input>
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>

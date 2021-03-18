@@ -119,8 +119,8 @@ a.ui.image.hvr-skew img {
 }
 
 #pigemoji {
-  font-size: 19px;
-  margin-left: 1px;
+  font-size: 17px;
+  margin-left: 0px;
   /* margin: 0; */
   /* position: absolute; */
   /* top: 20%; */
@@ -133,29 +133,16 @@ a.ui.image.hvr-skew img {
 }
 
 .ui.toggle.checkbox.pigtoggle {
-  transform: scale(.75);
+  transform: scale(.55);
   position: relative;
-  top: 5px;
+  top: 6px;
 }
 
-/* #pigtoggle {
-  background: red;
-} */
+.ui.toggle.checkbox.pigtoggle input:focus:checked~.box:before, .ui.toggle.checkbox.pigtoggle input:focus:checked~label:before {
+  background-color: #093B50 !important;
+}
 
-/* .ui.toggle.checkbox.pigtoggle .box:before, .ui.toggle.checkbox.pigtoggle label:before {
-  display: block;
-  position: absolute;
-  content: '';
-  z-index: 1;
-  transform: none;
-  border: none;
-  top: 0;
-  background: red;
-  box-shadow: none;
-  width: 3rem;
-  height: 1.5rem;
-  border-radius: 500rem
-} */
+
 
 #wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
