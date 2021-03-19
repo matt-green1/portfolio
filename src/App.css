@@ -214,6 +214,8 @@ a.ui.image.hvr-skew img {
   margin: auto;
 } */
 
+/* ------ Working basic button ------------------------------------------------------------------------ */
+
 .button.ui.button.scrollbutton {
   font-family: 'Souvenir Light';
   display: flex;
@@ -245,6 +247,9 @@ a.ui.image.hvr-skew img {
 .button.ui.button.scrollbutton:active {
   box-shadow: 0 0 0 rgb(223, 217, 217);
 }
+
+/* ------ ABOVE Working basic button ------------------------------------------------------------------------ */ */
+
 
 /* Picture blob for interests */
 
