@@ -28,7 +28,15 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <svg class="hidden">
+        <defs>
+            <clipPath id="clipBox" clipPathUnits="objectBoundingBox">
+                <polygon points="0,0 0,1 0.35,1 0.35,0.6 0.65,0.6 0.65,1 1,1 1,0" />
+            </clipPath>
+        </defs>
+      </svg>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

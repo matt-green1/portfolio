@@ -15,7 +15,7 @@ body {
   width: 300%;
   top: -110%;
   left: -50%;
-  opacity: 0.4;
+  opacity: 0.6;
   z-index: -1;
 }
 
@@ -212,6 +212,10 @@ a.ui.image.hvr-skew img {
   display: flex;
   margin: auto;
 }
+
+/* ---------- Itzel hover CSS ------------ */
+
+
 
 /* Picture blob for interests */
 
