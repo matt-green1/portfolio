@@ -205,17 +205,46 @@ a.ui.image.hvr-skew img {
   margin: 0px 30px 0px 30px
 }
 
-.button.ui.button.scrollbutton {
+/* .button.ui.button.scrollbutton {
+  BASIC BUTTON - no longer in use
   font-family: 'Souvenir Light';
   background-color:#093B50;
   color: white;
   display: flex;
   margin: auto;
+} */
+
+.button.ui.button.scrollbutton {
+  font-family: 'Souvenir Light';
+  display: flex;
+  margin: auto;
+  font-size: 14px;
+
+  --borderWidth: 1;
+  --boxShadowDepth: 2.1;
+  --buttonColor: #093B50;
+  --horizontalPadding: 16;
+  --verticalPadding: 8;
+
+  background: transparent;
+  border: calc(var(--borderWidth) * 1px) solid var(--buttonColor);
+  box-shadow: calc(var(--boxShadowDepth) * 1px) calc(var(--boxShadowDepth) * 1px) 0 #888;
+  color: var(--buttonColor);
+  cursor: pointer;
+  /* font-size: calc(var(--fontSize) * 1rem); */
+  /* font-weight: bold; */
+  outline: transparent;
+  padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
+  transition: box-shadow 0.2s ease;
 }
 
-/* ---------- Itzel hover CSS ------------ */
+.button.ui.button.scrollbutton:hover {
+  box-shadow: calc(var(--boxShadowDepth) / 2 * 1px) calc(var(--boxShadowDepth) / 2 * 1px) 0 #888;
+}
 
-
+.button.ui.button.scrollbutton:active {
+  box-shadow: 0 0 0 rgb(223, 217, 217);
+}
 
 /* Picture blob for interests */
 

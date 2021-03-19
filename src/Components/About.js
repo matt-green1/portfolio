@@ -142,8 +142,10 @@ class About extends React.Component {
                     offset={70}
                     duration={790}
                 >
+
+                    
                         <Button name="triangle down" className="scrollbutton"> 
-                            ↓ &nbsp;&nbsp;&nbsp;P&nbsp; r&nbsp; o&nbsp; j&nbsp; e&nbsp; c&nbsp; t&nbsp; s&nbsp;&nbsp;&nbsp; ↓
+                            ↓ PROJECTS ↓
                         </Button>
                 </Link>
                 
