@@ -17,8 +17,8 @@
     color: var(--buttonColor);
     cursor: pointer;
     
-    outline: transparent;
     padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
+    outline: transparent;
     transition: box-shadow 0.2s ease;
   }
   

@@ -204,11 +204,28 @@ a.ui.image.hvr-skew img {
 
 .button.ui.button.scrollbutton {
   font-family: 'Souvenir Light';
-  background-color:#093B50;
-  color: white;
+  background: transparent;
+  color: #093B50;
   display: flex;
   margin: auto;
+  border: 2px solid;
+  box-shadow: 3px 3px 0 #888;
+  cursor: pointer;
+  outline: transparent;
+  transition: box-shadow 0.2s ease;
+  padding: 4 4;
 }
+
+.button.ui.button.scrollbutton:hover {
+  box-shadow: 1px 1px 0 #888;
+}
+
+.button.ui.button.scrollbutton:active {
+  box-shadow: 0px 0px 0;
+}
+
+
+
 
 /* Picture blob for interests */
 
