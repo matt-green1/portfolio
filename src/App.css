@@ -15,7 +15,7 @@ body {
   width: 300%;
   top: -110%;
   left: -50%;
-  opacity: 0.4;
+  opacity: 0.6;
   z-index: -1;
 }
 
@@ -260,6 +260,11 @@ a.ui.image.hvr-skew img {
   to {
     transform: rotate(1turn);
   }
+}
+
+#blobslider {
+  display: flex;
+  margin: auto;
 }
 
 /* --------------- Project container below ---------------- */

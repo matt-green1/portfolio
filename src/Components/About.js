@@ -126,8 +126,8 @@ class About extends React.Component {
                             </div>
 
                         
-                            <br/>
-                            <input type="range" min="1" max="100"></input>
+                            <br/><br/>
+                            <input type="range" min="1" max="100" id="blobslider"></input>
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>
