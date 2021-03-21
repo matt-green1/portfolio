@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from "react-scroll"
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
-import email from "../images/email.png"
-import youngPicture from "../images/youngPicture.jpg"
+// import email from "../images/email.png"
+// import youngPicture from "../images/youngPicture.jpg"
 import currentPicture from "../images/currentPicture.jpg"
 import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 
@@ -119,7 +119,7 @@ class About extends React.Component {
                             <div className="box">
                                     <div className="spin-container">
                                         <div className="shape">
-                                            <div className="bgnowimage"></div>
+                                            <div className="bgnowimage" ></div>
                                                 {/* <Image src={currentPicture} alt="currentpic"/> */}
                                         </div>
                                     </div>
