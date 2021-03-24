@@ -23,7 +23,7 @@ class About extends React.Component {
     }
 
     blobHelper = (e) => {
-        this.setState({blobValue: e.target.value}, console.log(this.state.blobValue))
+        this.setState({blobValue: e.target.value})
     }
 
     render () {
@@ -124,7 +124,7 @@ class About extends React.Component {
 
                         
                             <br/><br/>
-                            <input type="range" min="3" max="100" id="blobslider" step="5" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
+                            <input type="range" min="3" max="100" id="blobslider" step="10" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>
