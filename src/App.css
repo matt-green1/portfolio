@@ -6,6 +6,8 @@ body {
   background: #CFD3E0 !important;
 }
 
+
+
 .page-header::before {
   background-image: url('./images/textures/old_moon.png');
   content: "";
@@ -229,6 +231,10 @@ a.ui.image.hvr-skew img {
 
 /* Picture blob for interests */
 
+#aboutsection {
+  --spin: 80s;
+}
+
 .bgnowimage {
   width: 142%;
   height: 142%;
@@ -236,10 +242,10 @@ a.ui.image.hvr-skew img {
   left: -21%;
   top: -21%;
   background: url('./images/currentPicture.jpg');
-  background-size: 90%;
+  background-size: 94%;
   background-position: center center;
   display: flex;
-  animation: spin 80s linear infinite reverse;
+  animation: spin var(--spin) linear infinite reverse;
   opacity: 1;
   z-index: 2;
 }
@@ -254,7 +260,7 @@ a.ui.image.hvr-skew img {
 .spin-container {
   width: 100%;
   height: 100%;
-  animation: spin 80s linear infinite;
+  animation: spin var(--spin) linear infinite;
 }
 
 .shape {

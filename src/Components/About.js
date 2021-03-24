@@ -10,7 +10,7 @@ import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 class About extends React.Component {
     state = {
         blurbStatus: null,
-        blobValue: 80
+        blobValue: 70
     }
 
 
@@ -50,7 +50,7 @@ class About extends React.Component {
                 
     
                 <br/>
-                <div id="aboutsection">
+                <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}` + 's'} }>
                     <Grid divided='vertically' stackable={true} id="aboutgrid">
                     <Grid.Row columns={2} centered={true} >
                         <Grid.Column width={6} id="blurbcolumn">
@@ -124,7 +124,7 @@ class About extends React.Component {
 
                         
                             <br/><br/>
-                            <input type="range" min="1" max="100" id="blobslider" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
+                            <input type="range" min="3" max="100" id="blobslider" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>
