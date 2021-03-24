@@ -9,15 +9,10 @@ import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 
 class About extends React.Component {
     state = {
-        blurbStatus: null
+        blurbStatus: null,
+        blobValue: 80
     }
 
-    // switchBlurbToPig = () => {   
-    //     if(this.state.blurbStatus === null) {this.setState({blurbStatus: "pig"})}
-    // }
-    // switchBlurbToEnglish = () => {
-    //     if(this.state.blurbStatus === "pig") {this.setState({blurbStatus: null})}
-    // }
 
     switchBlurb = () => {   
         if(this.state.blurbStatus === null) {
@@ -25,6 +20,10 @@ class About extends React.Component {
         } else {
             this.setState({blurbStatus: null})
         }
+    }
+
+    blobHelper = (e) => {
+        this.setState({blobValue: e.target.value}, console.log(this.state.blobValue))
     }
 
     render () {
@@ -45,7 +44,6 @@ class About extends React.Component {
                         </Grid.Column>
                         <Grid.Column className="linkicons">
                         <Header as="h1" id="emailsymbol" className="hvr-skew">@</Header>
-                        {/* <Image src={email} alt="email" className="hvr-skew" id="email" href="https://google.com" target="_blank"/> */}
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>
@@ -120,14 +118,13 @@ class About extends React.Component {
                                     <div className="spin-container">
                                         <div className="shape">
                                             <div className="bgnowimage" ></div>
-                                                {/* <Image src={currentPicture} alt="currentpic"/> */}
                                         </div>
                                     </div>
                             </div>
 
                         
                             <br/><br/>
-                            <input type="range" min="1" max="100" id="blobslider"></input>
+                            <input type="range" min="1" max="100" id="blobslider" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>
