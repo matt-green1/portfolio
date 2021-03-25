@@ -10,7 +10,7 @@ import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 class About extends React.Component {
     state = {
         blurbStatus: null,
-        blobValue: 70
+        blobValue: 100
     }
 
 
