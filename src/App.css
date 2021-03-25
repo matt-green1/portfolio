@@ -307,7 +307,8 @@ a.ui.image.hvr-skew img {
   box-shadow: 0px 0px 0px #000000;
   background: #093B50;
   border-radius: 5px;
-  border: 0px solid #FFFFFF;
+  /* border: 0px solid #FFFFFF; */
+  border: none;
 }
 #blobslider::-webkit-slider-thumb {
   /* box-shadow: 0px 0px 0px #FFFFFF; */
@@ -319,6 +320,7 @@ a.ui.image.hvr-skew img {
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -7px;
+  margin-left: -20px;
 }
 #blobslider:focus::-webkit-slider-runnable-track {
   background: #093B50;
@@ -372,6 +374,7 @@ a.ui.image.hvr-skew img {
   border-radius: 5px;
   background: #FFFFFF;
   cursor: pointer;
+  
 }
 #blobslider:focus::-ms-fill-lower {
   background: #093B50;
