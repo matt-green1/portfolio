@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from "react-scroll"
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
-// import email from "../images/email.png"
-// import youngPicture from "../images/youngPicture.jpg"
+import circle from "../images/circle.png"
+import blob from "../images/blob.png"
 import currentPicture from "../images/currentPicture.jpg"
 import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 
@@ -124,7 +124,14 @@ class About extends React.Component {
 
                         
                             <br/><br/>
-                            <input type="range" min="3" max="100" id="blobslider" step="10" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
+                            
+                            <div id="sliderspanholder">
+                                <span id="sliderholder">
+                                    <Image src={circle} alt="circle" className="blobmeter" />
+                                    <input type="range" min="3" max="103" id="blobslider" step="10" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
+                                    <Image src={blob} alt="blob" className="blobmeter" />
+                                </span>
+                            </div>
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>

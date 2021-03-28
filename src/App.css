@@ -201,7 +201,7 @@ a.ui.image.hvr-skew img {
 
 
 #interestscolumn {
-  margin: 0px 30px 0px 30px
+  margin: 0px 30px 0px 30px;
 }
 
 .button.ui.button.scrollbutton {
@@ -288,11 +288,27 @@ a.ui.image.hvr-skew img {
 
 
 /* -----------custom blobslider styling -------------  resoruce: https://www.cssportal.com/style-input-range/ */
+
+.blobmeter {
+  width: 26px;
+  margin-top: -2px;
+}
+
+#sliderspanholder {
+  display: flex;
+  margin: auto;
+}
+
+#sliderholder {
+  display: flex;
+  margin: auto;
+} 
+
 #blobslider {
   height: 23px;
   -webkit-appearance: none;
   display: flex;
-  margin: auto;
+  margin: 0 0 0 0;
   direction: rtl;
   background: transparent;
 }
@@ -314,13 +330,12 @@ a.ui.image.hvr-skew img {
   /* box-shadow: 0px 0px 0px #FFFFFF; */
   border: 1px solid #093B50;
   height: 16px;
-  width: 16px;
-  border-radius: 5px;
+  width: 22px;
+  border-radius: 15px;
   background: #FFFFFF;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -7px;
-  margin-left: -20px;
 }
 #blobslider:focus::-webkit-slider-runnable-track {
   background: #093B50;
@@ -340,7 +355,7 @@ a.ui.image.hvr-skew img {
   border: 1px solid #093B50;
   height: 16px;
   width: 16px;
-  border-radius: 5px;
+  border-radius: 15px;
   background: #FFFFFF;
   cursor: pointer;
 }
@@ -371,7 +386,7 @@ a.ui.image.hvr-skew img {
   border: 1px solid #093B50;
   height: 16px;
   width: 16px;
-  border-radius: 5px;
+  border-radius: 15px;
   background: #FFFFFF;
   cursor: pointer;
   
