@@ -8,7 +8,7 @@ import { Header, Button, Segment, Grid, Image, List } from 'semantic-ui-react'
 function ProjectContainer(){
     return(
         <div id= "projects">
-            <Link
+            {/* <Link
               activeClass="active"
               to="about"
               spy={true}
@@ -17,9 +17,9 @@ function ProjectContainer(){
               duration={790}
               >
                 <Button name="triangle up" className="scrollbutton"> 
-                  ↑ ABOUT ↑
+                  <span className="buttontext">↑ ABOUT ↑</span>
                 </Button>
-            </Link>
+            </Link> */}
             
             <Header as="h1" textAlign="center" id="projectsheader"> Projects</Header>
             

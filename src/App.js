@@ -5,6 +5,27 @@ import About from './Components/About'
 import ProjectContainer from './Containers/ProjectContainer'
 
 class App extends React.Component {
+  
+  render() {
+      return (
+        <div >
+          <div className="page-header"></div>
+          <NavBar />
+          <About />
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <ProjectContainer />
+        </div>
+      );
+    }
+}
+
+export default App;
+
+/*
+
+app before you removed state and handle navsection
+
+class App extends React.Component {
   state = {
     currentSection: "about"
   }  
@@ -36,3 +57,6 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+*/

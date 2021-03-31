@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-scroll"
+import { Link, animatescroll as scroll } from "react-scroll"
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
 import circle from "../images/circle.png"
@@ -149,7 +149,7 @@ class About extends React.Component {
 
                     
                         <Button name="triangle down" className="scrollbutton"> 
-                            ↓ PROJECTS ↓
+                            <span className="buttontext">↓ PROJECTS ↓</span>
                         </Button>
                 </Link>
                 
