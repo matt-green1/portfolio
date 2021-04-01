@@ -12,7 +12,6 @@ class App extends React.Component {
           <div className="page-header"></div>
           <NavBar />
           <About />
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
           <ProjectContainer />
         </div>
       );

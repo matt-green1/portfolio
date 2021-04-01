@@ -22,8 +22,6 @@ function Project() {
                     Back end Link
                 </li>
             </ul>
-            <br/>
-
             
         </div>
     )

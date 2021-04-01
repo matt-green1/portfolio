@@ -7,21 +7,7 @@ import { Header, Button, Segment, Grid, Image, List } from 'semantic-ui-react'
 
 function ProjectContainer(){
     return(
-        <div id= "projects">
-            {/* <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={790}
-              >
-                <Button name="triangle up" className="scrollbutton"> 
-                  <span className="buttontext">↑ ABOUT ↑</span>
-                </Button>
-            </Link> */}
-            
-            <Header as="h1" textAlign="center" id="projectsheader"> Projects</Header>
+        <div id="projects">
             
             <Segment id="projectcontainer">
                 <Grid divided='vertically' id="projectgrid" stackable={true} >
@@ -62,7 +48,6 @@ function ProjectContainer(){
                         Virtual Pet app modeled after the 90's-famous Tomogatchis. Users can create and account, 'adopt' and name a monster, and save their new pet's progress.
                         The frontend was built with Vanilla Javascript and the backend was ruby on Rails.
                         </p>
-                        <br/>
                       <List>
                         <List.Item href="https://www.youtube.com/watch?v=phURZL6HX50&feature=emb_logo&ab_channel=LuisReyes" className="projectbullet">Luis' Demo (eventually replace)</List.Item>
                         <List.Item href="https://github.com/brandongubitosa/FlatoGochi_FrontEnd" className="projectbullet">Github Frontend</List.Item>

@@ -42,7 +42,7 @@ class NavBar extends React.Component {
               </Link>
             </List.Item>
 
-            <List.Item className="navButton" >
+            <List.Item link="projects" className="navButton" >
               <Link
                 activeClass="active"
                 to="projects"

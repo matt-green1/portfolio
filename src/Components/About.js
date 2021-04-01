@@ -49,7 +49,7 @@ class About extends React.Component {
                     </Grid>
                 
     
-                <br/>
+                
                 <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}` + 's'} }>
                     <Grid divided='vertically' stackable={true} id="aboutgrid">
                     <Grid.Row columns={2} centered={true} >
@@ -123,7 +123,7 @@ class About extends React.Component {
                             </div>
 
                         
-                            <br/><br/>
+                            
                             
                             <div id="sliderspanholder">
                                 <span id="sliderholder">
@@ -137,13 +137,12 @@ class About extends React.Component {
                     </Grid>
                 </div>
             
-                <br/><br/><br/><br/>
                 <Link
                     activeClass="active"
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={70}
+                    offset={0}
                     duration={790}
                 >
 
@@ -153,7 +152,7 @@ class About extends React.Component {
                         </Button>
                 </Link>
                 
-                <br/><br/><br/>
+                
                 
 
             </div>
