@@ -142,8 +142,8 @@ class About extends React.Component {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={0}
-                    duration={790}
+                    offset={160}
+                    duration={490}
                 >
 
                     

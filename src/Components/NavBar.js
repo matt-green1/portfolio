@@ -48,7 +48,7 @@ class NavBar extends React.Component {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={160}
                 duration={490}
                 name="projects"
                 // onClick={(e) => {this.onItemChange(e)}}
