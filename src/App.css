@@ -261,7 +261,7 @@ div #projectsnav.active {
   cursor: pointer;
   outline: transparent;
   transition: box-shadow 0.2s ease;
-  padding: 4 4;
+  padding: 4 4 0 0;
   justify-content: center;
 }
 
@@ -344,6 +344,7 @@ div #projectsnav.active {
 #sliderspanholder {
   display: flex;
   margin: auto;
+  padding-top: 25px;
 }
 
 #sliderholder {
@@ -494,6 +495,20 @@ h2.ui.header.projecttitle {
   font-family: 'Souvenir Light';
   color: #093B50;
   text-align: center;
+}
+
+/* a.ui.image.hvr-skew img */
+#lifeletterimage.ui.image {
+  /* background-image: url('./images/textures/old_moon.png'); */
+  width: 700px;
+}
+
+#quizimage:hover {
+
+}
+
+#tamoimage:hover {
+
 }
 
 /* --------------- Fonts below ---------------- */

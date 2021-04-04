@@ -13,7 +13,7 @@ function ProjectContainer(){
                 <Grid divided='vertically' id="projectgrid" stackable={true} >
                   <Grid.Row columns={3} id="projectrow">
                     <Grid.Column className="projectcolumn" >
-                      <Image src={lifeletter} alt="lifeletter" />
+                      <Image src={lifeletter} alt="lifeletter" id="lifeletterimage" />
                       <Header as="h2" className="projecttitle" >LifeLetter</Header>
                         <p className="projectblurb">
                             Letter writing app that allows users to write and store notes to be sent in the event they pass away.
@@ -27,7 +27,7 @@ function ProjectContainer(){
                       </List>
                     </Grid.Column>
                     <Grid.Column className="projectcolumn">
-                        <Image src={quiz} alt="quiz"/>
+                        <Image src={quiz} alt="quiz" id="quizimage"/>
                         <Header as="h2" className="projecttitle" >Over / Under</Header>
                             <p className="projectblurb">
                                 Trivia app in which users can select themed games, track high scores over time, and customize their profile.
@@ -42,7 +42,7 @@ function ProjectContainer(){
                         </List>
                     </Grid.Column>
                     <Grid.Column className="projectcolumn">
-                    <Image src={tamo} centered={true} />
+                    <Image src={tamo} centered={true} id="tamoimage"/>
                       <Header as="h2" className="projecttitle">Flatogatchi</Header>
                         <p className="projectblurb" >
                         Virtual Pet app modeled after the 90's-famous Tomogatchis. Users can create and account, 'adopt' and name a monster, and save their new pet's progress.
