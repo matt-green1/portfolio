@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-scroll"
-import lifeletter from "../images/lifeletter.png"
-import quiz from "../images/quiz.png"
-import tamo from "../images/tamogatchi.png"
+import lifeletter from "../images/lifeletter_static.png"
+import quiz from "../images/quiz_still.png"
+import tamo from "../images/tamo_still.png"
 import { Header, Button, Segment, Grid, Image, List } from 'semantic-ui-react'
 
 function ProjectContainer(){

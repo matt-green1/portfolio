@@ -497,18 +497,36 @@ h2.ui.header.projecttitle {
   text-align: center;
 }
 
-/* a.ui.image.hvr-skew img */
-#lifeletterimage.ui.image {
-  /* background-image: url('./images/textures/old_moon.png'); */
-  width: 700px;
+/* div.column.projectcolumn {
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px grey;
+} */
+
+#lifeletterimage {
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px grey;
+}
+
+#quizimage {
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px grey;
+}
+
+#tamoimage {
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px grey;
+}
+
+#lifeletterimage:hover {
+  content:url("./images/lifeletter.gif");
 }
 
 #quizimage:hover {
-
+  content:url("./images/quiz.gif");
 }
 
 #tamoimage:hover {
-
+  content:url("./images/tamo.gif");
 }
 
 /* --------------- Fonts below ---------------- */
