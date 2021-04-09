@@ -453,6 +453,11 @@ div #projectsnav.active {
   padding-top: 275px;
   /* border: 5px solid red; */
 }
+/* 
+This padding and the padding above handle the projects nav highlioghting - may need to revise */
+#projectrow {
+  padding-top: 135px
+}
 
 #projectcontainer {
   /* border: 5px solid purple; */
@@ -527,6 +532,10 @@ h2.ui.header.projecttitle {
 
 #tamoimage:hover {
   content:url("./images/tamo.gif");
+}
+
+.ui.list .list>a.item, .ui.list>a.item {
+  color: #093B50 !important;
 }
 
 /* --------------- Fonts below ---------------- */
