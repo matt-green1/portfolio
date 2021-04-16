@@ -16,9 +16,11 @@ function ProjectContainer(){
                       <Image src={lifeletter} alt="lifeletter" id="lifeletterimage" />
                       <Header as="h2" className="projecttitle" >LifeLetter</Header>
                         <p className="projectblurb">
-                            Letter writing app that allows users to write and store notes to be sent in the event they pass away.
-                            A will for your feelings. Utilized webhooks via Zapier and FromStack to automate PDF creation and email notification.
-                            Designed app to store finished letters in Dropbox for added security and version control. Created and implemented style guide with CSS and Semantic UI.
+                          A will for your feelings. Letter writing app that allows users to write and store notes to be sent to loved ones in the event they pass away. Once finalized, letters are converted to pdfs and stored securely in a dropbox folder whose password is emailed to user-chosen 'executors' along with distribution instructions.                            
+                            <br/>
+                          <span className="techused">
+                            React.js | Javascript | Zapier | Semantic UI & CSS | Ruby on Rails | PostgreSQL
+                          </span>
                         </p>
                       <List>
                         <List.Item href="https://www.youtube.com/watch?v=pYok3fufeUI&feature=youtu.be&ab_channel=MatthewGreen" className="projectbullet">Video Demo</List.Item>
@@ -30,10 +32,11 @@ function ProjectContainer(){
                         <Image src={quiz} alt="quiz" id="quizimage"/>
                         <Header as="h2" className="projecttitle" >Over / Under</Header>
                             <p className="projectblurb">
-                                Trivia app in which users can select themed games, track high scores over time, and customize their profile.
-                                Developed Rails API backend with endpoints for users, games, rounds, and questions.
-                                Used JSON Web Tokens and localStorage to store encrypted user information client-side.
-                                Utilized Semantic UI React and React Sky for styling.
+                              Trivia app featuring themed games that involve guessing if a numerical answer is above or below a provided number. Users can create an account, customize their profile, and track their average score against other users via a leaderboard. 
+                                <br/>
+                                <span className="techused">
+                                  React.js | Javascript | Semantic UI | Ruby on Rails | PostgreSQL
+                                </span>
                             </p>
                         <List>
                             <List.Item href="https://over-under-app.herokuapp.com/" className="projectbullet">Live Site (Eventually video)</List.Item>
@@ -45,8 +48,11 @@ function ProjectContainer(){
                     <Image src={tamo} centered={true} id="tamoimage"/>
                       <Header as="h2" className="projecttitle">Flatogatchi</Header>
                         <p className="projectblurb" >
-                        Virtual Pet app modeled after the 90's-famous Tomogatchis. Users can create and account, 'adopt' and name a monster, and save their new pet's progress.
-                        The frontend was built with Vanilla Javascript and the backend was ruby on Rails.
+                          Virtual pet app inspired by the 90's Tamagotchi toys. Users can create an account, adopt a monster, and save its progress. Users can feed, discipline, and train their monster to alter its attributes and mood.
+                          <br/>
+                          <span className="techused">
+                            Javascript | HTML | Bootstrap | Ruby on Rails | PostgreSQL
+                          </span>
                         </p>
                       <List>
                         <List.Item href="https://www.youtube.com/watch?v=phURZL6HX50&feature=emb_logo&ab_channel=LuisReyes" className="projectbullet">Luis' Demo (eventually replace)</List.Item>

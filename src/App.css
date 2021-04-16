@@ -496,6 +496,10 @@ h2.ui.header.projecttitle {
   color: #093B50;
 }
 
+span.techused {
+  font-size: 85%;
+}
+
 .projectbullet {
   font-family: 'Souvenir Light';
   color: #093B50;
