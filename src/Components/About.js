@@ -43,7 +43,9 @@ class About extends React.Component {
                         <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
                         </Grid.Column>
                         <Grid.Column className="linkicons">
-                        <Header as="h1" id="emailsymbol" className="hvr-skew">@</Header>
+                        <Header as="h1" id="emailsymbol" className="hvr-skew">
+                            @
+                        </Header>
                         </Grid.Column>
                     </Grid.Row>
                     </Grid>
