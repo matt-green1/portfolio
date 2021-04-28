@@ -60,7 +60,7 @@ body {
 }
 
 #linkiconrow {
-  width: 13%!important;
+  width: 35%!important;
   margin-left: 50px;
 }
 
@@ -197,9 +197,8 @@ div #projectsnav.active {
 }
 
 #pigspan {
-  /* padding-left: 200px; */
-  position:absolute;
-  left: 500px;
+  position: absolute;
+  left: 80%;
 }
 
 .ui.toggle.checkbox.pigtoggle {
@@ -379,7 +378,7 @@ div #projectsnav.active {
   border: 1px solid #093B50;
   height: 12px;
   width: 18px;
-  border-radius: 3px;
+  border-radius: 30px;
   background: #FFFFFF;
   cursor: pointer;
   -webkit-appearance: none;
@@ -480,7 +479,7 @@ div#projectcontainer.ui.segment {
 }
 
 .ui.grid>[class*="three column"].row>.column.projectcolumn {
-  width: 20%!important;
+  width: 25%!important;
   margin: 0px 45px 0px 45px!important;
 }
 
@@ -499,7 +498,11 @@ span.techused {
   font-size: 85%;
 }
 
-.projectbullet {
+.projectdiv {
+  text-align: center;
+}
+
+.projectlink {
   font-family: 'Souvenir Light';
   color: #093B50;
   text-align: center;

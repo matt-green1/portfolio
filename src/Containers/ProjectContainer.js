@@ -22,27 +22,27 @@ function ProjectContainer(){
                             React.js | Javascript | Zapier | Semantic UI & CSS | Ruby on Rails | PostgreSQL
                           </span>
                         </p>
-                      <List>
-                        <List.Item href="https://www.youtube.com/watch?v=pYok3fufeUI&feature=youtu.be&ab_channel=MatthewGreen" className="projectbullet">Video Demo</List.Item>
-                        <List.Item href="https://github.com/matt-green1/capstone_frontend" className="projectbullet">Github Frontend</List.Item>
-                        <List.Item href="https://github.com/matt-green1/capstone_backend" className="projectbullet">Github Backend</List.Item>
-                      </List>
+                        <div className="projectdiv">
+                          <a href="https://www.youtube.com/watch?v=pYok3fufeUI&feature=youtu.be&ab_channel=MatthewGreen" target="_blank" rel="noreferrer" className="projectlink">Demo </a>
+                          | 
+                          <a href="https://github.com/matt-green1/capstone_frontend" target="_blank" rel="noreferrer" className="projectlink"> Github</a>
+                        </div>
                     </Grid.Column>
                     <Grid.Column className="projectcolumn">
                         <Image src={quiz} alt="quiz" id="quizimage"/>
                         <Header as="h2" className="projecttitle" >Over / Under</Header>
                             <p className="projectblurb">
-                              Trivia app featuring themed games that involve guessing if a numerical answer is above or below a provided number. Users can create an account, customize their profile, and track their average score against other users via a leaderboard. 
+                              Trivia app featuring themed games that involve guessing if an answer is above or below a provided number. Users can create an account, customize their profile, and track their average score against other users on a leaderboard. 
                                 <br/>
                                 <span className="techused">
                                   React.js | Javascript | Semantic UI | Ruby on Rails | PostgreSQL
                                 </span>
                             </p>
-                        <List>
-                            <List.Item href="https://over-under-app.herokuapp.com/" className="projectbullet">Live Site (Eventually video)</List.Item>
-                            <List.Item href="https://github.com/elandau91/mod4-game-frontend" className="projectbullet">Github Frontend</List.Item>
-                            <List.Item href="https://github.com/elandau91/mod4-game-backend" className="projectbullet">Github Backend</List.Item>
-                        </List>
+                        <div className="projectdiv">
+                          <a href="https://www.youtube.com/watch?v=JCH6onb_iUg&ab_channel=MatthewGreen" target="_blank" rel="noreferrer" className="projectlink">Demo </a>
+                          | 
+                          <a href="https://github.com/matt-green1/overunder_frontend" target="_blank" rel="noreferrer" className="projectlink"> Github</a>
+                        </div>
                     </Grid.Column>
                     <Grid.Column className="projectcolumn">
                     <Image src={tamo} centered={true} id="tamoimage"/>
@@ -54,11 +54,12 @@ function ProjectContainer(){
                             Javascript | HTML | Bootstrap | Ruby on Rails | PostgreSQL
                           </span>
                         </p>
-                      <List>
-                        <List.Item href="https://www.youtube.com/watch?v=phURZL6HX50&feature=emb_logo&ab_channel=LuisReyes" className="projectbullet">Luis' Demo (eventually replace)</List.Item>
-                        <List.Item href="https://github.com/brandongubitosa/FlatoGochi_FrontEnd" className="projectbullet">Github Frontend</List.Item>
-                        <List.Item href="https://github.com/brandongubitosa/FlatoGachi" className="projectbullet">Github Backend</List.Item>
-                      </List>
+                        <div className="projectdiv">
+                          <a href="https://www.youtube.com/watch?v=_1SBHhtt6L4&ab_channel=MatthewGreen" target="_blank" rel="noreferrer" className="projectlink">Demo </a>
+                          | 
+                          <a href="https://github.com/brandongubitosa/FlatoGochi_FrontEnd" target="_blank" rel="noreferrer" className="projectlink"> Github</a>
+                        </div>
+                
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
