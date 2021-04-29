@@ -150,7 +150,7 @@ class About extends React.Component {
 
                     
                         <Button name="triangle down" className="scrollbutton"> 
-                            <span className="buttontext">↓ PROJECTS ↓</span>
+                            <span className="buttontext">◹ &nbsp;PROJECTS&nbsp; ◸</span>
                         </Button>
                 </Link>
                 

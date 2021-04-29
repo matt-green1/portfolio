@@ -247,7 +247,7 @@ div #projectsnav.active {
 }
 
 .button.ui.button.scrollbutton {
-  width: 150px;
+  width: 155px;
   height: 45px;
   transform: skew(9deg);
   font-family: 'Souvenir Light';
@@ -265,7 +265,7 @@ div #projectsnav.active {
 }
 
 .button.ui.button.scrollbutton:hover {
-  box-shadow: 1px 1px 0 #888;
+  box-shadow: 2px 2px 0 #888;
 }
 
 .button.ui.button.scrollbutton:active {

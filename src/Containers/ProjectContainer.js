@@ -4,6 +4,11 @@ import lifeletter from "../images/lifeletter_static.png"
 import quiz from "../images/quiz_still.png"
 import tamo from "../images/tamo_still.png"
 import { Header, Button, Segment, Grid, Image, List } from 'semantic-ui-react'
+import javascript from "../images/tech_logos/javascript.png"
+import postgres from "../images/tech_logos/postgres.png"
+import rails from "../images/tech_logos/rails.png"
+import react from "../images/tech_logos/react.png"
+import zapier from "../images/tech_logos/zapier.png"
 
 function ProjectContainer(){
     return(
@@ -17,8 +22,26 @@ function ProjectContainer(){
                       <Header as="h2" className="projecttitle" >LifeLetter</Header>
                         <p className="projectblurb">
                           A will for your feelings. Letter writing app that allows users to write and store notes to be sent to loved ones in the event they pass away. Once finalized, letters are converted to pdfs and stored securely in a dropbox folder whose password is emailed to user-chosen 'executors' along with distribution instructions.                            
-                            <br/>
+{/* 
+                        put this in for all tech sections */}
+                            {/* <Grid divided='vertically' >
+                    <Grid.Row columns={3} id="linkiconrow">
+                        <Grid.Column className="linkicons">
+                        <Image src={linkedin} alt="linkedin" className="hvr-skew" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
+                        </Grid.Column>
+                        <Grid.Column className="linkicons">
+                        <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
+                        </Grid.Column>
+                        <Grid.Column className="linkicons">
+                        <Header as="h1" id="emailsymbol" className="hvr-skew">
+                            @
+                        </Header>
+                        </Grid.Column>
+                    </Grid.Row>
+                    </Grid> */}
+
                           <span className="techused">
+                            <img src={react}/>
                             React.js | Javascript | Zapier | Semantic UI & CSS | Ruby on Rails | PostgreSQL
                           </span>
                         </p>
