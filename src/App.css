@@ -492,10 +492,40 @@ h2.ui.header.projecttitle {
 .projectblurb {
   font-family: 'Souvenir Light';
   color: #093B50;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 span.techused {
-  font-size: 85%;
+  /* font-size: 85%; */
+  display: flex;
+  flex-direction: row;
+  width: 45px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* PROJECT TECH ROW =-------------------------------- */
+
+div.three.column.row.techiconrow {
+  justify-content: center;
+  
+}
+
+.ui.grid>[class*="three column"].row>.column.techicons {
+  width: 65px!important;
+}
+
+div.two.column.row.techiconrow {
+  justify-content: center;
+}
+
+.ui.grid>[class*="two column"].row>.column.techicons {
+  width: 65px!important;
+}
+
+img.techimage{
+  width: inherit;
 }
 
 .projectdiv {
