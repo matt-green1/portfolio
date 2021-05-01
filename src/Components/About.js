@@ -6,11 +6,13 @@ import circle from "../images/circle.png"
 import blob from "../images/blob.png"
 import currentPicture from "../images/currentPicture.jpg"
 import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
-
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 class About extends React.Component {
     state = {
         blurbStatus: null,
-        blobValue: 100
+        blobValue: 100,
+        value: "magreen118@gmail.com",
+        copied: false
     }
 
 
@@ -26,30 +28,37 @@ class About extends React.Component {
         this.setState({blobValue: e.target.value})
     }
 
+    emailCopyHelper = () => {
+        this.setState({copied: true})
+        setTimeout(() => {
+            this.setState({copied: false});
+            }, 800);
+          };
+    
     render () {
         return (
             <div id="about">
                 <Header as="h1" id="name">
                     Matt Green
                 </Header>
-                
-                
                     <Grid divided='vertically' >
                     <Grid.Row columns={3} id="linkiconrow">
                         <Grid.Column className="linkicons">
-                        <Image src={linkedin} alt="linkedin" className="hvr-skew" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
+                            <Image src={linkedin} alt="linkedin" className="hvr-skew" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
                         </Grid.Column>
                         <Grid.Column className="linkicons">
-                        <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
+                            <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
                         </Grid.Column>
                         <Grid.Column className="linkicons">
-                        <Header as="h1" id="emailsymbol" className="hvr-skew">
-                            @
-                        </Header>
+                            <CopyToClipboard text={this.state.value} onCopy={() => this.emailCopyHelper()}>
+                                <Header as="h1" id="emailsymbol" className="hvr-skew">
+                                    @
+                                </Header>
+                            </CopyToClipboard>
                         </Grid.Column>
+                        {this.state.copied ? <span id="emailcopytext">Email Copied!</span> : null}
                     </Grid.Row>
                     </Grid>
-                
     
                 
                 <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}` + 's'} }>

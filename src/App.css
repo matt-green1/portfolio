@@ -49,6 +49,12 @@ body {
   font-size: 30px;
   color: #093B50;
   margin-top: -9px;
+  cursor: pointer;
+}
+
+#emailcopytext {
+  font-family: 'Souvenir Light';
+  color:#093B50;
 }
 
 #linkedin {
