@@ -50,6 +50,7 @@ function ProjectContainer(){
                             <p className="projectblurb">
                               Trivia app featuring themed games that involve guessing if an answer is above or below a provided number. Users can create an account, customize their profile, and track their average score against other users on a leaderboard.                                
                             </p>
+                            <br/>
                             <Grid divided='vertically' >
                               <Grid.Row columns={2} className="techiconrow">
                                 <Grid.Column className="techicons">
@@ -73,6 +74,7 @@ function ProjectContainer(){
                         <p className="projectblurb" >
                           Virtual pet app inspired by the 90's Tamagotchi toys. Users can create an account, adopt a monster, and save its progress. Users can feed, discipline, and train their monster to alter its attributes and mood.
                         </p>
+                        <br/>
                           <Grid divided='vertically' >
                               <Grid.Row columns={2} className="techiconrow">
                                 <Grid.Column className="techicons">
