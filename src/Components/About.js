@@ -105,6 +105,7 @@ class About extends React.Component {
                             ?
                                 <Header as="h4" id="blurb">
                                     I'm a full-stack developer based in nyc. I'm passionate about using new technologies to build delightful, intuitive web apps. I'm a jack of all trades, ready to use my swiss-army-knife-like skillset to tackle tough problems and implement user focused, visually pleasant solutions.
+                                    <br/><br/><br/>
                                 </Header>
                             :
                                 <Header as="h4" id="blurb">
