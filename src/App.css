@@ -3,15 +3,15 @@
 }
 
 body {
-  background: #CFD3E0 !important;
+  background: #EADEC5 !important;
 }
 
 
-
+/* base: 8 secon on animation grain and opacity at .6 */
 .page-header::before {
   background-image: url('./images/textures/old_moon.png');
   content: "";
-  animation: grain 8s steps(10) infinite;
+  animation: grain 11s steps(10) infinite;
   position: fixed;
   height: 300%;
   width: 300%;
@@ -39,7 +39,7 @@ body {
 #name {
   font-family: 'Duera Expanded Black';
   font-size: 57px;
-  color: #093B50;
+  color: #27305e;
   padding: 50px 0px 0px 50px;
   margin-bottom: 0px;
 }
@@ -47,14 +47,14 @@ body {
 #emailsymbol {
   font-family: 'Vary Light';
   font-size: 30px;
-  color: #093B50;
+  color: #27305e;
   margin-top: -9px;
   cursor: pointer;
 }
 
 #emailcopytext {
   font-family: 'Souvenir Light';
-  color:#093B50;
+  color:#27305e;
 }
 
 #linkedin {
@@ -183,13 +183,13 @@ div #projectsnav.active {
 
 #greeting {
   font-family: 'Souvenir Light';
-  color:#093B50;
+  color:#27305e;
   font-size: 33px;
 }
 
 #blurb {
   font-family: 'Souvenir Light';
-  color:#093B50;
+  color:#27305e;
   line-height: 49px;
   font-size: 23px;
 }
@@ -214,7 +214,7 @@ div #projectsnav.active {
 }
 
 .ui.toggle.checkbox.pigtoggle input:focus:checked~.box:before, .ui.toggle.checkbox.pigtoggle input:focus:checked~label:before {
-  background-color: #093B50 !important;
+  background-color: #27305e !important;
 }
 
 
@@ -258,7 +258,7 @@ div #projectsnav.active {
   transform: skew(9deg);
   font-family: 'Souvenir Light';
   background: transparent;
-  color: #093B50;
+  color: #27305e;
   display: flex;
   margin: auto;
   border: 2px solid;
@@ -374,14 +374,14 @@ div #projectsnav.active {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
-  background: #093B50;
+  background: #27305e;
   border-radius: 5px;
   /* border: 0px solid #FFFFFF; */
   border: none;
 }
 #blobslider::-webkit-slider-thumb {
   /* box-shadow: 0px 0px 0px #FFFFFF; */
-  border: 1px solid #093B50;
+  border: 1px solid #27305e;
   height: 12px;
   width: 18px;
   border-radius: 30px;
@@ -391,7 +391,7 @@ div #projectsnav.active {
   margin-top: -5px;
 }
 #blobslider:focus::-webkit-slider-runnable-track {
-  background: #093B50;
+  background: #27305e;
 }
 #blobslider::-moz-range-track {
   width: 100%;
@@ -399,13 +399,13 @@ div #projectsnav.active {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
-  background: #093B50;
+  background: #27305e;
   border-radius: 2px;
   border: 0px solid #FFFFFF;
 }
 #blobslider::-moz-range-thumb {
   box-shadow: 0px 0px 0px #FFFFFF;
-  border: 1px solid #093B50;
+  border: 1px solid #27305e;
   height: 16px;
   width: 16px;
   border-radius: 15px;
@@ -422,13 +422,13 @@ div #projectsnav.active {
   color: transparent;
 }
 #blobslider::-ms-fill-lower {
-  background: #093B50;
+  background: #27305e;
   border: 0px solid #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 0px 0px #000000;
 }
 #blobslider::-ms-fill-upper {
-  background: #093B50;
+  background: #27305e;
   border: 0px solid #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 0px 0px #000000;
@@ -436,7 +436,7 @@ div #projectsnav.active {
 #blobslider::-ms-thumb {
   margin-top: 1px;
   box-shadow: 0px 0px 0px #FFFFFF;
-  border: 1px solid #093B50;
+  border: 1px solid #27305e;
   height: 16px;
   width: 16px;
   border-radius: 15px;
@@ -445,10 +445,10 @@ div #projectsnav.active {
   
 }
 #blobslider:focus::-ms-fill-lower {
-  background: #093B50;
+  background: #27305e;
 }
 #blobslider:focus::-ms-fill-upper {
-  background: #093B50;
+  background: #27305e;
 }
 
 
@@ -456,16 +456,15 @@ div #projectsnav.active {
 
 #projects {
   padding-top: 275px;
-  /* border: 5px solid red; */
 }
 /* 
 This padding and the padding above handle the projects nav highlioghting - may need to revise */
 #projectrow {
-  padding-top: 175px
+  padding-top: 145px;
+  padding-bottom: 50px;
 }
 
 #projectcontainer {
-  /* border: 5px solid purple; */
   border: 0;
 }
 
@@ -481,23 +480,23 @@ div#projectcontainer.ui.segment {
 
 #projectsheader {
   font-family: 'Souvenir Light';
-  color: #093B50;
+  color: #27305e;
 }
 
 .ui.grid>[class*="three column"].row>.column.projectcolumn {
-  width: 25%!important;
+  width: 24%!important;
   margin: 0px 45px 0px 45px!important;
 }
 
 h2.ui.header.projecttitle {
   font-family: 'Souvenir Light';
-  color: #093B50;
+  color: #27305e;
   text-align: center;
 }
 
 .projectblurb {
   font-family: 'Souvenir Light';
-  color: #093B50;
+  color: #27305e;
   /* display: flex; */
   /* justify-content: center; */
 }
@@ -519,7 +518,7 @@ div.three.column.row.techiconrow {
 }
 
 .ui.grid>[class*="three column"].row>.column.techicons {
-  width: 65px!important;
+  width: 59px!important;
 }
 
 div.two.column.row.techiconrow {
@@ -527,7 +526,7 @@ div.two.column.row.techiconrow {
 }
 
 .ui.grid>[class*="two column"].row>.column.techicons {
-  width: 65px!important;
+  width: 59px!important;
 }
 
 img.techimage{
@@ -540,8 +539,9 @@ img.techimage{
 
 .projectlink {
   font-family: 'Souvenir Light';
-  color: #093B50;
+  color: #27305e;
   text-align: center;
+  font-size: 1.4em;
 }
 
 /* div.column.projectcolumn {
@@ -577,7 +577,7 @@ img.techimage{
 }
 
 .ui.list .list>a.item, .ui.list>a.item {
-  color: #093B50 !important;
+  color: #27305e !important;
 }
 
 /* --------------- Fonts below ---------------- */
