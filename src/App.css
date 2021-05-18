@@ -11,13 +11,13 @@ body {
 .page-header::before {
   background-image: url('./images/textures/old_moon.png');
   content: "";
-  animation: grain 11s steps(10) infinite;
+  animation: grain 8s steps(10) infinite;
   position: fixed;
   height: 300%;
   width: 300%;
   top: -110%;
   left: -50%;
-  opacity: 0.6;
+  opacity: 0.43;
   z-index: -1;
 }
 
@@ -37,10 +37,14 @@ body {
 /* --------------- Top section below --------------- */
 
 #name {
-  font-family: 'Duera Expanded Black';
-  font-size: 57px;
+  font-family: 'National-Black';
+  font-size: 87px;
+  /* font-family: 'Duera Expanded Black';
+  font-size: 57px; */
+  /* padding: 50px 0px 0px 50px; */
+  /* NOTE: need to bump nav down a little with national 2 */
   color: #27305e;
-  padding: 50px 0px 0px 50px;
+  padding: 30px 0px 0px 50px;
   margin-bottom: 0px;
 }
 
@@ -53,7 +57,7 @@ body {
 }
 
 #emailcopytext {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   color:#27305e;
 }
 
@@ -126,7 +130,7 @@ a.ui.image.hvr-skew img {
 }
 
 .navButton {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   font-size: 22px;
 }
 
@@ -182,13 +186,13 @@ div #projectsnav.active {
 }
 
 #greeting {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   color:#27305e;
   font-size: 33px;
 }
 
 #blurb {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   color:#27305e;
   line-height: 49px;
   font-size: 23px;
@@ -252,11 +256,12 @@ div #projectsnav.active {
   padding-top: 2px;
 }
 
+
 .button.ui.button.scrollbutton {
   width: 155px;
   height: 45px;
   transform: skew(9deg);
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   background: transparent;
   color: #27305e;
   display: flex;
@@ -479,7 +484,7 @@ div#projectcontainer.ui.segment {
 }
 
 #projectsheader {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   color: #27305e;
 }
 
@@ -489,13 +494,13 @@ div#projectcontainer.ui.segment {
 }
 
 h2.ui.header.projecttitle {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   color: #27305e;
   text-align: center;
 }
 
 .projectblurb {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   color: #27305e;
   /* display: flex; */
   /* justify-content: center; */
@@ -538,7 +543,7 @@ img.techimage{
 }
 
 .projectlink {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   color: #27305e;
   text-align: center;
   font-size: 1.4em;
@@ -605,10 +610,10 @@ src: local('Duera Expanded Black'), url('./fonts/duera-expanded-black.ttf') form
 
 
 @font-face {
-  font-family: 'Souvenir Light';
+  font-family: 'Recoleta-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Souvenir Light'), url('./fonts/souvenir-light.otf') format('woff');
+  src: local('Recoleta-Regular'), url('./fonts/souvenir-light.otf') format('woff');
   } 
 
 
@@ -654,4 +659,25 @@ src: local('Windsor Pro Ultra Heavy'), url('./fonts/WindsorProUltHv.woff') forma
   font-style: normal;
   font-weight: normal;
   src: local('danzza-medium-webfont'), url('./fonts/danzza-medium-webfont.ttf') format('woff');
+  }
+
+@font-face {
+  font-family: 'Recoleta-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Recoleta-Regular'), url('./fonts/Recoleta-RegularDEMO.otf') format('woff');
+  }
+
+@font-face {
+  font-family: 'National-Extrabold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('National-Extrabold'), url('./fonts/National-Extrabold.ttf') format('woff');
+  }
+
+@font-face {
+  font-family: 'National-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('National-Black'), url('./fonts/National-Black.ttf') format('woff');
   }
