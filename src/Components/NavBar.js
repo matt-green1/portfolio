@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-scroll"
-import { List, Button } from 'semantic-ui-react'
+import { List } from 'semantic-ui-react'
 class NavBar extends React.Component {
 
   render() {   

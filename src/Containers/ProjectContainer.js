@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link } from "react-scroll"
 import lifeletter from "../images/lifeletter_static.png"
 import quiz from "../images/quiz_still.png"
 import tamo from "../images/tamo_still.png"
-import { Header, Button, Segment, Grid, Image, List } from 'semantic-ui-react'
+import { Header, Segment, Grid, Image } from 'semantic-ui-react'
 import javascript from "../images/tech_logos/javascript.png"
 import rails from "../images/tech_logos/rails.png"
 import react from "../images/tech_logos/react.png"

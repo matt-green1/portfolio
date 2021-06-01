@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link, animatescroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
 import circle from "../images/circle.png"
 import blob from "../images/blob.png"
-import currentPicture from "../images/currentPicture.jpg"
 import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 class About extends React.Component {
@@ -60,8 +59,8 @@ class About extends React.Component {
                     </Grid.Row>
                     </Grid>
     
-                
-                <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}` + 's'} }>
+                {/* PREVIOUSLY:  <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}` + 's'} }> */}
+                <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}s`} }>
                     <Grid divided='vertically' stackable={true} id="aboutgrid">
                     <Grid.Row columns={2} centered={true} >
                         <Grid.Column width={6} id="blurbcolumn">
