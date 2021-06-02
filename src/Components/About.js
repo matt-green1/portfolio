@@ -8,7 +8,7 @@ import { Grid, Image, Header, Button, Checkbox } from 'semantic-ui-react'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 class About extends React.Component {
     state = {
-        blurbStatus: null,
+        blurbStatus: false,
         blobValue: 100,
         value: "magreen118@gmail.com",
         copied: false
@@ -16,10 +16,10 @@ class About extends React.Component {
 
 
     switchBlurb = () => {   
-        if(this.state.blurbStatus === null) {
-            this.setState({blurbStatus: "pig"})
+        if(this.state.blurbStatus === false) {
+            this.setState({blurbStatus: true})
         } else {
-            this.setState({blurbStatus: null})
+            this.setState({blurbStatus: false})
         }
     }
 
@@ -68,7 +68,7 @@ class About extends React.Component {
                             
                             <span id="wave">
                                 {
-                                this.state.blurbStatus === null
+                                !this.state.blurbStatus
                                 ?
                                 <>
                                 ✋
@@ -80,14 +80,14 @@ class About extends React.Component {
                                 }
                             </span>&nbsp;
                                 {
-                                this.state.blurbStatus === null
+                                !this.state.blurbStatus
                                 ?
                                 <>
                                 Hey, I'm Matt!  
                                 </>
                                 :
                                 <>
-                                Eyhay, I'mway Attmay! 
+                                Eyhay, I'mway Attmay!
                                 </>
                                 }
                             <span id="pigspan">
@@ -108,7 +108,7 @@ class About extends React.Component {
 
                         {/* PL Translator: http://www.snowcrest.net/donnelly/piglatin.html */}
                         {
-                            this.state.blurbStatus === null
+                            !this.state.blurbStatus
                             
                             ?
                                 <Header as="h4" id="blurb">
@@ -132,9 +132,6 @@ class About extends React.Component {
                                         </div>
                                     </div>
                             </div>
-
-                        
-                            
                             
                             <div id="sliderspanholder">
                                 <span id="sliderholder">
