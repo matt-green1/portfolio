@@ -157,15 +157,10 @@ class About extends React.Component {
                     duration={490}
                 >
 
-                    
                         <Button name="triangle down" className="scrollbutton"> 
                             <span className="buttontext">◹ &nbsp;PROJECTS&nbsp; ◸</span>
                         </Button>
                 </Link>
-                
-                
-                
-
             </div>
         )
     }
