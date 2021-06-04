@@ -528,7 +528,7 @@ span.techused {
 
 div.three.column.row.techiconrow {
   justify-content: center;
-  
+  padding-bottom: 0px;
 }
 
 .ui.grid>[class*="three column"].row>.column.techicons {
@@ -537,6 +537,7 @@ div.three.column.row.techiconrow {
 
 div.two.column.row.techiconrow {
   justify-content: center;
+  padding-bottom: 0px;
 }
 
 .ui.grid>[class*="two column"].row>.column.techicons {
@@ -549,6 +550,8 @@ img.techimage{
 
 .projectdiv {
   text-align: center;
+  font-family: "Recoletta-Regular";
+  margin-top: 14px
 }
 
 .projectlink {
@@ -556,6 +559,7 @@ img.techimage{
   color: #27305e;
   text-align: center;
   font-size: 1.4em;
+  /* height: 500px; */
 }
 
 /* div.column.projectcolumn {

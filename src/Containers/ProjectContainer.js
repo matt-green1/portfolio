@@ -39,7 +39,7 @@ function ProjectContainer(){
                         
                         <div className="projectdiv">
                           <a href="https://www.youtube.com/watch?v=pYok3fufeUI&feature=youtu.be&ab_channel=MatthewGreen" target="_blank" rel="noreferrer" className="projectlink">Demo </a>
-                          | 
+                          || 
                           <a href="https://github.com/matt-green1/capstone_frontend" target="_blank" rel="noreferrer" className="projectlink"> Github</a>
                         </div>
                     </Grid.Column>
@@ -63,7 +63,7 @@ function ProjectContainer(){
 
                         <div className="projectdiv">
                           <a href="https://www.youtube.com/watch?v=JCH6onb_iUg&ab_channel=MatthewGreen" target="_blank" rel="noreferrer" className="projectlink">Demo </a>
-                          | 
+                          || 
                           <a href="https://github.com/matt-green1/overunder_frontend" target="_blank" rel="noreferrer" className="projectlink"> Github</a>
                         </div>
                     </Grid.Column>
@@ -86,7 +86,7 @@ function ProjectContainer(){
                           </Grid>
                         <div className="projectdiv">
                           <a href="https://www.youtube.com/watch?v=_1SBHhtt6L4&ab_channel=MatthewGreen" target="_blank" rel="noreferrer" className="projectlink">Demo </a>
-                          | 
+                          || 
                           <a href="https://github.com/brandongubitosa/FlatoGochi_FrontEnd" target="_blank" rel="noreferrer" className="projectlink"> Github</a>
                         </div>
                 
