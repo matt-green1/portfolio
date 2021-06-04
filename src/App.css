@@ -50,9 +50,9 @@ body {
 
 #emailsymbol {
   font-family: 'Vary Light';
-  font-size: 30px;
+  font-size: 34px;
   color: #27305e;
-  margin-top: -9px;
+  margin-top: -13px;
   cursor: pointer;
 }
 
@@ -70,7 +70,8 @@ body {
 }
 
 #linkiconrow {
-  width: 35%!important;
+  /* width: 35%!important; */
+  width: 35%;
   margin-left: 50px;
 }
 
