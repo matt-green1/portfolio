@@ -128,6 +128,7 @@ a.ui.image.hvr-skew img {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 2;
 }
 
 .navButton {
@@ -172,18 +173,14 @@ div #projectsnav.active {
 /* --------- General about section below ------------ */
 
 #aboutgrid {
-  margin-top: 85px;
-  margin-bottom: 95px;
+  margin-top: 130px;
+  margin-bottom: 20px;
 }
 
-/* #about {
-  border: 5px solid green;
-} */
-
-  /* ------- Blurb section below ---------- */
+/* ------- Blurb section below ---------- */
 
 #blurbcolumn {
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 100px;
 }
 
 #greeting {
@@ -219,7 +216,7 @@ div #projectsnav.active {
   background-color: #27305e !important;
 }
 
-  /* ------- Emoji Hand wave section below ---------- */
+/* ------- Emoji Hand wave section below ---------- */
 
 
 #wave {
@@ -282,10 +279,7 @@ div #projectsnav.active {
   box-shadow: 0px 0px 0;
 }
 
-
-
-
-/* Picture blob for interests */
+/* ------- Picture blob for interests ------------- */
 
 #aboutsection {
   --spin: 80s;
@@ -341,9 +335,7 @@ div #projectsnav.active {
   }
 }
 
-
-
-/* -----------custom blobslider styling -------------  resoruce: https://www.cssportal.com/style-input-range/ */
+/* ----------- Custom Blobslider Styling -------------  */
 
 .blobmeter {
   width: 32px;

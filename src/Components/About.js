@@ -106,7 +106,6 @@ class About extends React.Component {
                         </Header>
                         
 
-                        {/* PL Translator: http://www.snowcrest.net/donnelly/piglatin.html */}
                         {
                             !this.state.blurbStatus
                             
@@ -154,9 +153,9 @@ class About extends React.Component {
                     duration={490}
                 >
 
-                        <Button name="triangle down" className="scrollbutton"> 
+                        {/* <Button name="triangle down" className="scrollbutton"> 
                             <span className="buttontext">◹ &nbsp;PROJECTS&nbsp; ◸</span>
-                        </Button>
+                        </Button> */}
                 </Link>
             </div>
         )
