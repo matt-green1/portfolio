@@ -63,7 +63,7 @@ class About extends React.Component {
                 <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}s`} }>
                     <Grid divided='vertically' stackable={true} id="aboutgrid">
                     <Grid.Row columns={2} centered={true} >
-                        <Grid.Column width={6} id="blurbcolumn">
+                        <Grid.Column width={7} id="blurbcolumn">
                         <Header as="h1" id="greeting">
                             
                             <span id="wave">
