@@ -137,9 +137,11 @@ a.ui.image.hvr-skew img {
 }
 
 div a.active {
-  border-bottom: 1px solid #333;
-  background-color: red;
-  color: yellow !important;
+  /* border-bottom: 1px solid #27305e; */
+  color: #27305e !important;
+  /* font-style: italic; */
+  /* text-shadow: 1px 1px 2px white; */
+  text-decoration: underline;
 }
 
 /* div #aboutnav.active {
@@ -155,19 +157,19 @@ div #projectsnav.active {
 } */
 
 #aboutnav {
-  color: blue;
+  color: #27305e;
 }
 
 #aboutnav:hover {
-  color:salmon;
+  color: #c26363;
 }
 
 #projectsnav {
-  color: blue;
+  color: #27305e;
 }
 
 #projectsnav:hover {
-  color:salmon;
+  color: #c26363;
 }
 
 /* --------- General about section below ------------ */
