@@ -14,7 +14,7 @@ class NavBar extends React.Component {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={490}
+                duration={480}
                 name="about"
                 // onClick={(e) => {this.onItemChange(e)}}
                 id="aboutnav"
@@ -29,8 +29,8 @@ class NavBar extends React.Component {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={160}
-                duration={490}
+                offset={175}
+                duration={480}
                 name="projects"
                 // onClick={(e) => {this.onItemChange(e)}}
                 id="projectsnav"
