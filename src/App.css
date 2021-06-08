@@ -6,6 +6,17 @@ body {
   background: #EADEC5 !important;
 }
 
+/* breakpoints: (
+    'xsmall'      : 0px,    // mobile-m max=375px
+    'small'       : 376px,  // mobile-l max=425px
+    'medium'      : 426px,  // tablet max=768px
+    'large'       : 769px,  // laptop-m max=1024px => ipad pro falls under this
+    'xlarge'      : 1025px, // laptop-l max=1440px
+    'xxlarge'     : 1440px, // 4k max=2560px
+    'xxxlarge'    : 2560px
+); */
+
+
 
 /* base: 8 secon on animation grain and opacity at .6 */
 .page-header::before {
@@ -37,7 +48,7 @@ body {
 /* --------------- Top section below --------------- */
 
 #name {
-  font-family: 'National-Black';
+  font-family: 'National2-Black';
   font-size: 6.2em;
   color: #27305e;
   padding: 30px 0px 0px 50px;
@@ -115,16 +126,44 @@ a.ui.image.hvr-skew img {
 
 /* ------------ Nav section below ------------- */
 
-#nav {
+/* start here - deal with hiehgt scenarios for projects */
+
+@media screen and (max-width: 1300px){
+  #nav {
+    position: fixed;
+    top: 55px;
+    /* width: 90%; */
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+    display:none;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  #nav {
+    position: fixed;
+    top: 55px;
+    /* width: 90%; */
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+  }
+}
+
+/* #nav {
   position: fixed;
   top: 55px;
-  /* width: 90%; */
   right: 100px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   z-index: 2;
-}
+} */
 
 .navButton {
   font-family: 'Recoleta-Regular';
@@ -598,19 +637,12 @@ body::after {
   font-family: 'Recoleta-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Recoleta-Regular'), url('./fonts/Recoleta-RegularDEMO.otf') format('woff');
+  src: local('Recoleta-Regular'), url('./fonts/Recoleta-Regular.woff') format('woff');
   }
 
 @font-face {
-  font-family: 'National-Extrabold';
+  font-family: 'National2-Black';
   font-style: normal;
   font-weight: normal;
-  src: local('National-Extrabold'), url('./fonts/National-Extrabold.ttf') format('woff');
-  }
-
-@font-face {
-  font-family: 'National-Black';
-  font-style: normal;
-  font-weight: normal;
-  src: local('National-Black'), url('./fonts/National-Black.ttf') format('woff');
+  src: local('National2-Black'), url('./fonts/National2-Black.woff') format('woff');
   }
