@@ -205,7 +205,8 @@ div #projectsnav.active {
 /* --------- General about section below ------------ */
 
 #aboutgrid {
-  margin-top: 130px;
+  /* margin-top: 130px; */
+  margin-top: 8%;
   margin-bottom: 20px;
 }
 
@@ -513,6 +514,8 @@ div #projectsnav.active {
 
 div#projectcontainer.ui.segment {
   background: transparent;
+  margin: -100px 0px 100px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 #projectsheader {
@@ -570,8 +573,15 @@ img.techimage{
 
 .projectdiv {
   text-align: center;
+  margin-top: 20px;
+}
+
+.linkdivider {
   font-family: "Recoletta-Regular";
-  margin-top: 14px
+  font-size: 2em;
+  color: #27305e;
+  vertical-align:bottom;
+  margin: 0px 3px 0px 3px;
 }
 
 .projectlink {
@@ -579,7 +589,10 @@ img.techimage{
   color: #27305e;
   text-align: center;
   font-size: 1.4em;
-  /* height: 500px; */
+}
+
+.projectlink:hover {
+  color: #c26363;
 }
 
 /* div.column.projectcolumn {
