@@ -6,19 +6,6 @@ body {
   background: #EADEC5 !important;
 }
 
-/* breakpoints: (
-    'xsmall'      : 0px,    // mobile-m max=375px
-    'small'       : 376px,  // mobile-l max=425px
-    'medium'      : 426px,  // tablet max=768px
-    'large'       : 769px,  // laptop-m max=1024px => ipad pro falls under this
-    'xlarge'      : 1025px, // laptop-l max=1440px
-    'xxlarge'     : 1440px, // 4k max=2560px
-    'xxxlarge'    : 2560px
-); */
-
-
-
-/* base: 8 secon on animation grain and opacity at .6 */
 .page-header::before {
   background-image: url('./images/textures/old_moon.png');
   content: "";
@@ -28,7 +15,7 @@ body {
   width: 300%;
   top: -110%;
   left: -50%;
-  opacity: 0.43;
+  opacity: 0.46;
   z-index: -1;
 }
 
@@ -126,13 +113,12 @@ a.ui.image.hvr-skew img {
 
 /* ------------ Nav section below ------------- */
 
-/* start here - deal with hiehgt scenarios for projects */
+/* Deals with different screen heights for projects */
 
 @media screen and (max-width: 1300px){
   #nav {
     position: fixed;
     top: 55px;
-    /* width: 90%; */
     right: 100px;
     display: flex;
     align-items: center;
@@ -146,7 +132,6 @@ a.ui.image.hvr-skew img {
   #nav {
     position: fixed;
     top: 55px;
-    /* width: 90%; */
     right: 100px;
     display: flex;
     align-items: center;
@@ -154,16 +139,6 @@ a.ui.image.hvr-skew img {
     z-index: 2;
   }
 }
-
-/* #nav {
-  position: fixed;
-  top: 55px;
-  right: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  z-index: 2;
-} */
 
 .navButton {
   font-family: 'Recoleta-Regular';
@@ -173,18 +148,6 @@ a.ui.image.hvr-skew img {
 div a.active {
   border-bottom: 1px dotted #27305e;
 }
-
-/* div #aboutnav.active {
-  border-bottom: 1px solid #333;
-  background-color: red;
-  color: yellow !important;
-}
-
-div #projectsnav.active {
-  border-bottom: 1px solid #333;
-  background-color: red;
-  color: yellow !important;
-} */
 
 #aboutnav {
   color: #27305e;
@@ -205,7 +168,6 @@ div #projectsnav.active {
 /* --------- General about section below ------------ */
 
 #aboutgrid {
-  /* margin-top: 130px; */
   margin-top: 8%;
   margin-bottom: 20px;
 }
@@ -284,7 +246,6 @@ div #projectsnav.active {
   transform: skew(-9deg);
   padding-top: 2px;
 }
-
 
 .button.ui.button.scrollbutton {
   width: 155px;
@@ -403,16 +364,13 @@ div #projectsnav.active {
   width: 100%;
   height: 3px;
   cursor: pointer;
-  /* animate: 0.2s; */
   box-shadow: 0px 0px 0px #000000;
   background: #27305e;
   border-radius: 5px;
-  /* border: 0px solid #FFFFFF; */
   border: none;
 }
 
 #blobslider::-webkit-slider-thumb {
-  /* box-shadow: 0px 0px 0px #FFFFFF; */
   border: 1px solid #27305e;
   height: 12px;
   width: 18px;
@@ -431,7 +389,6 @@ div #projectsnav.active {
   width: 100%;
   height: 3px;
   cursor: pointer;
-  /* animate: 0.2s; */
   box-shadow: 0px 0px 0px #000000;
   background: #27305e;
   border-radius: 2px;
@@ -452,7 +409,6 @@ div #projectsnav.active {
   width: 100%;
   height: 3px;
   cursor: pointer;
-  /* animate: 0.2s; */
   background: transparent;
   border-color: transparent;
   color: transparent;
@@ -494,6 +450,7 @@ div #projectsnav.active {
 /* --------------- Project container below ---------------- */
 
 #projects {
+  /* formerly 275 */
   padding-top: 330px;
 }
 
@@ -538,7 +495,6 @@ div #projectsnav.active {
   padding-bottom: 150px;
 }
 }
-
 
 #projectcontainer {
   border: 0;
@@ -633,11 +589,6 @@ img.techimage{
 .projectlink:hover {
   color: #c26363;
 }
-
-/* div.column.projectcolumn {
-  border-radius: 10px;
-  box-shadow: 2px 2px 6px grey;
-} */
 
 #lifeletterimage {
   border-radius: 4px;
