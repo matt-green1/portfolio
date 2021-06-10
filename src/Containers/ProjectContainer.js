@@ -1,12 +1,12 @@
 import React from 'react'
-import lifeletter from "../images/lifeletter_static.png"
-import quiz from "../images/quiz_still.png"
-import tamo from "../images/tamo_still.png"
+import lifeletter from "../images/projects_images/lifeletter_static.png"
+import quiz from "../images/projects_images/quiz_still.png"
+import tamo from "../images/projects_images/tamo_still.png"
 import { Header, Segment, Grid, Image } from 'semantic-ui-react'
-import javascript from "../images/tech_logos/javascript.png"
-import rails from "../images/tech_logos/rails.png"
-import react from "../images/tech_logos/react.png"
-import zapier from "../images/tech_logos/zapier.png"
+import javascript from "../images/projects_images/tech_logos/javascript.png"
+import rails from "../images/projects_images/tech_logos/rails.png"
+import react from "../images/projects_images/tech_logos/react.png"
+import zapier from "../images/projects_images/tech_logos/zapier.png"
 
 function ProjectContainer(){
     return(

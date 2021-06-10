@@ -1,8 +1,8 @@
 import React from 'react'
-import github from "../images/github.png"
-import linkedin from "../images/linkedin.png"
-import circle from "../images/circle.png"
-import blob from "../images/blob.png"
+import github from "../images/about_images/github.png"
+import linkedin from "../images/about_images/linkedin.png"
+import circle from "../images/about_images/circle.png"
+import blob from "../images/about_images/blob.png"
 import { Grid, Image, Header, Checkbox } from 'semantic-ui-react'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 class About extends React.Component {

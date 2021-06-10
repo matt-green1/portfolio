@@ -285,7 +285,7 @@ div a.active {
   position: absolute;
   left: -21%;
   top: -21%;
-  background: url('./images/currentPicture.jpg');
+  background: url('./images/about_images/currentPicture.jpg');
   background-size: 94%;
   background-position: center center;
   display: flex;
@@ -608,19 +608,19 @@ img.techimage{
 /* Preloads gifs and hides them to prevent on hover flicker */
 body::after {
    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-   content:url("./images/lifeletter.gif") url("./images/quiz.gif") url("./images/tamo.gif"); 
+   content:url("./images/projects_images/lifeletter.gif") url("./images/projects_images/quiz.gif") url("./images/projects_images/tamo.gif"); 
 }
 
 #lifeletterimage:hover {
-  content:url("./images/lifeletter.gif");
+  content:url("./images/projects_images/lifeletter.gif");
 }
 
 #quizimage:hover {
-  content:url("./images/quiz.gif");
+  content:url("./images/projects_images/quiz.gif");
 }
 
 #tamoimage:hover {
-  content:url("./images/tamo.gif");
+  content:url("./images/projects_images/tamo.gif");
 }
 
 .ui.list .list>a.item, .ui.list>a.item {
