@@ -8,7 +8,7 @@ import rails from "../images/projects_images/tech_logos/rails.png"
 import react from "../images/projects_images/tech_logos/react.png"
 import zapier from "../images/projects_images/tech_logos/zapier.png"
 
-function ProjectContainer(){
+function Projects(){
     return(
         <div id="projects">
             
@@ -97,5 +97,5 @@ function ProjectContainer(){
     )
 }
 
-export default ProjectContainer
+export default Projects
 

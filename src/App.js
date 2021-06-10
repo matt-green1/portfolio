@@ -2,7 +2,7 @@ import './App.css';
 import React from "react"
 import NavBar from './Components/NavBar'
 import About from './Components/About'
-import ProjectContainer from './Containers/ProjectContainer'
+import Projects from './Components/Projects'
 
 class App extends React.Component {
   
@@ -12,7 +12,7 @@ class App extends React.Component {
           <div className="page-header"></div>
           <NavBar />
           <About />
-          <ProjectContainer />
+          <Projects />
         </div>
       );
     }
