@@ -19,7 +19,7 @@ function ProjectContainer(){
                       <Image src={lifeletter} alt="lifeletter" id="lifeletterimage" />
                       <Header as="h2" className="projecttitle" >LifeLetter</Header>
                         <p className="projectblurb">
-                          A will for your feelings. Letter writing app that allows users to write and store notes to be sent to loved ones in the event they pass away. Once finalized, letters are converted to pdfs and stored securely in a dropbox folder whose password is emailed to user-chosen 'executors' along with distribution instructions.                            
+                          A will for your feelings in which users can write and store letters to be sent in the event they pass away. Letters are converted to pdfs and stored securely in dropbox along with distribution instructions for user-chosen 'executors'.
                         </p>
 
                           <Grid divided='vertically' >
@@ -47,9 +47,8 @@ function ProjectContainer(){
                         <Image src={quiz} alt="quiz" id="quizimage"/>
                         <Header as="h2" className="projecttitle" >Over / Under</Header>
                             <p className="projectblurb">
-                              Trivia app featuring themed games that involve guessing if an answer is above or below a provided number. Users can create an account, customize their profile, and track their average score against other users on a leaderboard.                                
+                              Trivia app featuring themed games where users guess if obscure facts and figures are above or below a provided number. Users can create and customize their account, and track their scores against other users on a leaderboard.
                             </p>
-                            <br/>
                             <Grid divided='vertically' >
                               <Grid.Row columns={2} className="techiconrow">
                                 <Grid.Column className="techicons">
@@ -71,9 +70,8 @@ function ProjectContainer(){
                     <Image src={tamo} centered={true} id="tamoimage"/>
                       <Header as="h2" className="projecttitle">Flatogatchi</Header>
                         <p className="projectblurb" >
-                          Virtual pet app inspired by the 90's Tamagotchi toys. Users can create an account, adopt a monster, and save its progress. Users can feed, discipline, and train their monster to alter its attributes and mood.
+                          Virtual pet app inspired by the 90's-famous Tamagotchi toys. Users can choose a monster type to adopt and name. Once adopted they can save its progress as they feed, discipline, and train it to alter its attributes and mood.
                         </p>
-                        <br/>
                           <Grid divided='vertically' >
                               <Grid.Row columns={2} className="techiconrow">
                                 <Grid.Column className="techicons">
