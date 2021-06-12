@@ -1,26 +1,16 @@
 import React from 'react'
 import { Grid, Image, Header } from 'semantic-ui-react'
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Greeting from './Greeting.js'
-import github from "../images/about_images/github.png"
-import linkedin from "../images/about_images/linkedin.png"
+import IconGrid from './IconGrid.js'
 import circle from "../images/about_images/circle.png"
 import blob from "../images/about_images/blob.png"
 class About extends React.Component {
     state = {
         blurbStatus: false,
-        blobValue: 100,
-        value: "magreen118@gmail.com",
-        copied: false
+        blobValue: 100
     }
     
-    emailCopyHelper = () => {
-        this.setState({copied: true})
-        setTimeout(() => {
-            this.setState({copied: false});
-            }, 800);
-          };
-
     switchBlurb = () => {   
         if(this.state.blurbStatus === false) {
             this.setState({blurbStatus: true})
@@ -40,32 +30,16 @@ class About extends React.Component {
                 <Header as="h1" id="name">
                     Matt Green
                 </Header>
-                    <Grid divided='vertically' >
-                    <Grid.Row columns={3} id="linkiconrow">
-                        <Grid.Column className="linkicons">
-                            <Image src={linkedin} alt="linkedin" className="hvr-skew" id="linkedin" href="https://linkedin.com/in/matthewgreen123" target="_blank" />
-                        </Grid.Column>
-                        <Grid.Column className="linkicons">
-                            <Image src={github} alt="github" className="hvr-skew" id="github" href="https://github.com/matt-green1" target="_blank"/>
-                        </Grid.Column>
-                        <Grid.Column className="linkicons">
-                            <CopyToClipboard text={this.state.value} onCopy={() => this.emailCopyHelper()}>
-                                <Header as="h1" id="emailsymbol" className="hvr-skew">
-                                    @
-                                </Header>
-                            </CopyToClipboard>
-                        </Grid.Column>
-                        {this.state.copied ? <span id="emailcopytext">Email Copied!</span> : null}
-                    </Grid.Row>
-                    </Grid>
-    
+                
+                <IconGrid/>
+                
                 <div id="aboutsection" style={ {'--spin': `${this.state.blobValue}s`} }>
                     <Grid divided='vertically' stackable={true} id="aboutgrid">
                         <Grid.Row columns={2} centered={true} >
                             <Grid.Column width={7} id="blurbcolumn">
                             
                                 <Greeting blurbStatus={this.state.blurbStatus} switchBlurb={this.switchBlurb} />
-                            
+            
                                 {
                                 !this.state.blurbStatus
                                     ?
@@ -83,11 +57,11 @@ class About extends React.Component {
 
                             <Grid.Column width={5} id="interestscolumn">
                                 <div className="box">
-                                        <div className="spin-container">
-                                            <div className="shape">
-                                                <div className="bgnowimage" ></div>
-                                            </div>
+                                    <div className="spin-container">
+                                        <div className="shape">
+                                            <div className="bgnowimage" ></div>
                                         </div>
+                                    </div>
                                 </div>
                                 
                                 <div id="sliderspanholder">
