@@ -1,10 +1,9 @@
 import React from 'react'
-import { Grid, Image, Header } from 'semantic-ui-react'
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { Grid, Header } from 'semantic-ui-react'
 import Greeting from './Greeting.js'
 import IconGrid from './IconGrid.js'
-import circle from "../images/about_images/circle.png"
-import blob from "../images/about_images/blob.png"
+import PhotoSlider from './PhotoSlider.js'
+
 class About extends React.Component {
     state = {
         blurbStatus: false,
@@ -55,22 +54,11 @@ class About extends React.Component {
                             
                             </Grid.Column>
 
-                            <Grid.Column width={5} id="interestscolumn">
-                                <div className="box">
-                                    <div className="spin-container">
-                                        <div className="shape">
-                                            <div className="bgnowimage" ></div>
-                                        </div>
-                                    </div>
-                                </div>
+                            
+                            <Grid.Column width={5} id="photocolumn">
                                 
-                                <div id="sliderspanholder">
-                                    <span id="sliderholder">
-                                        <Image src={circle} alt="circle" className="blobmeter" />
-                                        <input type="range" min="3" max="103" id="blobslider" step="10" value={this.state.blobValue} onChange={(e) => {this.blobHelper(e)}}></input>
-                                        <Image src={blob} alt="blob" className="blobmeter" />
-                                    </span>
-                                </div>
+                                <PhotoSlider blobValue={this.state.blobValue} blobHelper={this.blobHelper} />
+                                
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

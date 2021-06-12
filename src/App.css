@@ -235,10 +235,10 @@ div a.active {
   100% { transform: rotate( 0.0deg) }
 }
 
-/* --------------- Interests section below --------------- */
+/* --------------- Photo section below --------------- */
 
 
-#interestscolumn {
+#photocolumn {
   margin: 0px 30px 0px 30px;
 }
 
@@ -273,7 +273,7 @@ div a.active {
   box-shadow: 0px 0px 0;
 }
 
-/* ------- Picture blob for interests ------------- */
+/* ------- Picture blob for photo ------------- */
 
 #aboutsection {
   --spin: 80s;
