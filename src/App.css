@@ -79,7 +79,7 @@ body {
 } */
 
 .ui.image img {
-  width: 33px;
+  max-width: 33px;
 }
 
 .hvr-skew {
