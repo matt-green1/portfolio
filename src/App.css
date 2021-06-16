@@ -73,10 +73,6 @@ body {
   width: 60px!important;
 }
 
-/* a.ui.image.hvr-skew img {
-  width: 50px;
-  wasn't doing anything - being overwritten by semantic I belive - new css selector below
-} */
 
 .ui.image img {
   max-width: 33px;
