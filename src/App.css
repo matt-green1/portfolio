@@ -73,7 +73,6 @@ body {
   width: 60px!important;
 }
 
-
 .ui.image img {
   max-width: 33px;
 }
@@ -144,7 +143,7 @@ body {
 
 .navButton {
   font-family: 'Recoleta-Regular';
-  font-size: 1.7em;
+  font-size: 24px;
 }
 
 div a.active {
@@ -175,6 +174,10 @@ div a.active {
 }
 
 /* ------- Blurb section below ---------- */
+
+/* .ui.grid>[class*="three column"].row {
+  padding-top: 2984px 0!important;
+} */
 
 #blurbcolumn {
   margin: 0px 0px 0px 100px;
@@ -212,6 +215,18 @@ div a.active {
 .ui.toggle.checkbox.pigtoggle input:focus:checked~.box:before, .ui.toggle.checkbox.pigtoggle input:focus:checked~label:before {
   background-color: #27305e !important;
 }
+
+/* .ui.toggle.checkbox.pigtoggle input:focus:checked~.box:before, .ui.toggle.checkbox.pigtoggle input:focus:checked~label:after {
+  background-color: #27305e !important;
+} */
+
+/* .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
+  background-color: #27305e !important;
+}
+
+.ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:after {
+  background-color: #27305e !important;
+} */
 
 /* ------- Emoji Hand wave section below ---------- */
 
