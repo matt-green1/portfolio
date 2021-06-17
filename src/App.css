@@ -596,7 +596,7 @@ img.techimage{
   font-family: "Recoletta-Regular";
   font-size: 28px;
   color: #27305e;
-  vertical-align:bottom;
+  vertical-align: sub;
   margin: 0px 3px 0px 3px;
 }
 
