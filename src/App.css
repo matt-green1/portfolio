@@ -544,11 +544,15 @@ h2.ui.header.projecttitle {
   font-family: 'Recoleta-Regular';
   color: #27305e;
   text-align: center;
+  font-size: 24px;
 }
 
 .projectblurb {
   font-family: 'Recoleta-Regular';
   color: #27305e;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 14px;
 }
 
 span.techused {
@@ -590,7 +594,7 @@ img.techimage{
 
 .linkdivider {
   font-family: "Recoletta-Regular";
-  font-size: 2em;
+  font-size: 28px;
   color: #27305e;
   vertical-align:bottom;
   margin: 0px 3px 0px 3px;
@@ -600,7 +604,7 @@ img.techimage{
   font-family: 'Recoleta-Regular';
   color: #27305e;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 19px;
 }
 
 .projectlink:hover {
