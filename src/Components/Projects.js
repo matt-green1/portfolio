@@ -47,7 +47,7 @@ function Projects(){
                         <Image src={quiz} alt="quiz" id="quizimage"/>
                         <Header as="h2" className="projecttitle" >Over / Under</Header>
                             <p className="projectblurb">
-                              Trivia app featuring themed games where users guess if obscure facts and figures are above or below a provided number. Users can create and customize their account, and track their scores against other users on a leaderboard.
+                              Trivia app featuring themed games where users guess if obscure facts and figures are above or below a provided number. Users can customize their account, and track their scores against other users on a leaderboard.
                             </p>
                             <Grid divided='vertically' >
                               <Grid.Row columns={2} className="techiconrow">
