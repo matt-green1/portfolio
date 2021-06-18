@@ -207,7 +207,8 @@ div a.active {
 }
 
 .ui.toggle.checkbox.pigtoggle {
-  transform: scale(.55);
+  /* transform: scale(.55); */
+  transform: scale(.45);
   position: relative;
   top: 6px;
 }
