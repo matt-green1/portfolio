@@ -198,7 +198,7 @@ div a.active {
 
 #pigemoji {
   font-size: 17px;
-  margin-left: 0px;
+  margin-left: -4px;
 }
 
 #pigspan {
@@ -210,7 +210,7 @@ div a.active {
   /* transform: scale(.55); */
   transform: scale(.45);
   position: relative;
-  top: 6px;
+  top: 8px;
 }
 
 .ui.toggle.checkbox.pigtoggle input:focus:checked~.box:before, .ui.toggle.checkbox.pigtoggle input:focus:checked~label:before {
