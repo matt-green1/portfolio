@@ -475,7 +475,7 @@ div a.active {
 @media screen and (max-width: 937px) and (min-width: 767px) {
   .ui.grid>[class*="three column"].row>.column.projectcolumn {
     min-width: 74%;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
   }
 }
 
