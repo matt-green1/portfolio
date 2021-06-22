@@ -3,11 +3,11 @@
 }
 
 body {
-  background: #EADEC5 !important;
+  background: #eadec5 !important;
 }
 
 .page-header::before {
-  background-image: url('./images/textures/old_moon.png');
+  background-image: url("./images/textures/old_moon.png");
   content: "";
   animation: grain 8s steps(10) infinite;
   position: fixed;
@@ -20,31 +20,84 @@ body {
 }
 
 @keyframes grain {
-  0%, 100% { transform:translate(0, 0) }
-  10% { transform:translate(-5%, -10%) }
-  20% { transform:translate(-15%, 5%) }
-  30% { transform:translate(7%, -25%) }
-  40% { transform:translate(-5%, 25%) }
-  50% { transform:translate(-15%, 10%) }
-  60% { transform:translate(15%, 0%) }
-  70% { transform:translate(0%, 15%) }
-  80% { transform:translate(3%, 35%) }
-  90% { transform:translate(-10%, 10%) }
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
 }
 
 /* --------------- Top section below --------------- */
 
-#name {
-  font-family: 'National2-Black';
-  font-size: 87px;
-  /* font-size: 6.2em; */
-  color: #27305e;
-  padding: 30px 0px 0px 50px;
-  margin-bottom: 0px;
+@media screen and (min-width: 1215px) {
+  #name {
+    font-family: "National2-Black";
+    font-size: 87px;
+    color: #27305e;
+    padding: 30px 0px 0px 50px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1214px) {
+  #name {
+    font-family: "National2-Black";
+    font-size: 84px;
+    color: #27305e;
+    padding: 30px 0px 0px 50px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  #name {
+    font-family: "National2-Black";
+    font-size: 80px;
+    color: #27305e;
+    padding: 30px 0px 0px 50px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #name {
+    font-family: "National2-Black";
+    font-size: 80px;
+    color: #27305e;
+    padding: 30px 0px 0px 50px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
 }
 
 #emailsymbol {
-  font-family: 'Vary Light';
+  font-family: "Vary Light";
   font-size: 34px;
   color: #27305e;
   margin-top: -13px;
@@ -52,8 +105,8 @@ body {
 }
 
 #emailcopytext {
-  font-family: 'Recoleta-Regular';
-  color:#27305e;
+  font-family: "Recoleta-Regular";
+  color: #27305e;
 }
 
 #linkedin {
@@ -64,13 +117,20 @@ body {
   width: 32px;
 }
 
-#linkiconrow {
-  /* Appears to not be doing anything width: 35%; */
-  margin-left: 55px;
+@media screen and (min-width: 768px) {
+  #linkiconrow {
+    margin-left: 55px;
+  }
 }
 
-.ui.grid>[class*="three column"].row>.column.linkicons {
-  width: 60px!important;
+@media screen and (max-width: 767px) {
+  #linkiconrow {
+    justify-content: center;
+  }
+}
+
+.ui.grid > [class*="three column"].row > .column.linkicons {
+  width: 60px !important;
 }
 
 .ui.image img {
@@ -88,7 +148,9 @@ body {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-skew:hover, .hvr-skew:focus, .hvr-skew:active {
+.hvr-skew:hover,
+.hvr-skew:focus,
+.hvr-skew:active {
   -webkit-transform: skew(-7deg);
   transform: skew(-7deg);
 }
@@ -107,7 +169,9 @@ body {
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
 }
-.hvr-skew-forward:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active {
+.hvr-skew-forward:hover,
+.hvr-skew-forward:focus,
+.hvr-skew-forward:active {
   -webkit-transform: skew(-7deg);
   transform: skew(-7deg);
 }
@@ -116,20 +180,20 @@ body {
 
 /* Deals with different screen heights for projects */
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1214px) {
   #nav {
-    position: fixed;
+    /* position: fixed;
     top: 55px;
     right: 75px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    z-index: 2;
-    display:none;
+    z-index: 2; */
+    display: none;
   }
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1215px) {
   #nav {
     position: fixed;
     top: 55px;
@@ -142,7 +206,7 @@ body {
 }
 
 .navButton {
-  font-family: 'Recoleta-Regular';
+  font-family: "Recoleta-Regular";
   font-size: 24px;
 }
 
@@ -184,14 +248,14 @@ div a.active {
 }
 
 #greeting {
-  font-family: 'Recoleta-Regular';
-  color:#27305e;
+  font-family: "Recoleta-Regular";
+  color: #27305e;
   font-size: 33px;
 }
 
 #blurb {
-  font-family: 'Recoleta-Regular';
-  color:#27305e;
+  font-family: "Recoleta-Regular";
+  color: #27305e;
   line-height: 49px;
   font-size: 23px;
 }
@@ -208,12 +272,13 @@ div a.active {
 
 .ui.toggle.checkbox.pigtoggle {
   /* transform: scale(.55); */
-  transform: scale(.45);
+  transform: scale(0.45);
   position: relative;
   top: 8px;
 }
 
-.ui.toggle.checkbox.pigtoggle input:focus:checked~.box:before, .ui.toggle.checkbox.pigtoggle input:focus:checked~label:before {
+.ui.toggle.checkbox.pigtoggle input:focus:checked ~ .box:before,
+.ui.toggle.checkbox.pigtoggle input:focus:checked ~ label:before {
   background-color: #27305e !important;
 }
 
@@ -231,30 +296,43 @@ div a.active {
 
 /* ------- Emoji Hand wave section below ---------- */
 
-
 #wave {
   animation-name: wave-animation;
   animation-duration: 4.5s;
-  animation-iteration-count: 1;  
+  animation-iteration-count: 1;
   animation-delay: 0s;
   transform-origin: 30% 70%;
   display: inline-block;
-
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate(0.0deg) }
-   10% { transform: rotate(-8.0deg) } 
-   20% { transform: rotate(8.0deg) }
-   30% { transform: rotate(-8.0deg) }
-   40% { transform: rotate(8.0deg) }
-   50% { transform: rotate(-10.0deg) }
-   60% { transform: rotate( 0.0deg) } 
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-8deg);
+  }
+  20% {
+    transform: rotate(8deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* --------------- Photo section below --------------- */
-
 
 #photocolumn {
   margin: 0px 30px 0px 30px;
@@ -269,7 +347,7 @@ div a.active {
   width: 155px;
   height: 45px;
   transform: skew(9deg);
-  font-family: 'Recoleta-Regular';
+  font-family: "Recoleta-Regular";
   background: transparent;
   color: #27305e;
   display: flex;
@@ -303,7 +381,7 @@ div a.active {
   position: absolute;
   left: -21%;
   top: -21%;
-  background: url('./images/about_images/currentPicture.jpg');
+  background: url("./images/about_images/currentPicture.jpg");
   background-size: 94%;
   background-position: center center;
   display: flex;
@@ -316,7 +394,7 @@ div a.active {
   width: 225px;
   height: 225px;
   display: flex;
-  margin: auto
+  margin: auto;
 }
 
 .spin-container {
@@ -337,8 +415,12 @@ div a.active {
 }
 
 @keyframes morph {
-  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
-  100% {border-radius: 70% 60%;} 
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 70% 60%;
+  }
 }
 
 @keyframes spin {
@@ -365,7 +447,7 @@ div a.active {
 #sliderholder {
   display: flex;
   margin: auto;
-} 
+}
 
 #blobslider {
   height: 23px;
@@ -395,7 +477,7 @@ div a.active {
   height: 12px;
   width: 18px;
   border-radius: 30px;
-  background: #FFFFFF;
+  background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -5px;
@@ -412,16 +494,16 @@ div a.active {
   box-shadow: 0px 0px 0px #000000;
   background: #27305e;
   border-radius: 2px;
-  border: 0px solid #FFFFFF;
+  border: 0px solid #ffffff;
 }
 
 #blobslider::-moz-range-thumb {
-  box-shadow: 0px 0px 0px #FFFFFF;
+  box-shadow: 0px 0px 0px #ffffff;
   border: 1px solid #27305e;
   height: 16px;
   width: 16px;
   border-radius: 15px;
-  background: #FFFFFF;
+  background: #ffffff;
   cursor: pointer;
 }
 
@@ -436,26 +518,26 @@ div a.active {
 
 #blobslider::-ms-fill-lower {
   background: #27305e;
-  border: 0px solid #FFFFFF;
+  border: 0px solid #ffffff;
   border-radius: 4px;
   box-shadow: 0px 0px 0px #000000;
 }
 
 #blobslider::-ms-fill-upper {
   background: #27305e;
-  border: 0px solid #FFFFFF;
+  border: 0px solid #ffffff;
   border-radius: 4px;
   box-shadow: 0px 0px 0px #000000;
 }
 
 #blobslider::-ms-thumb {
   margin-top: 1px;
-  box-shadow: 0px 0px 0px #FFFFFF;
+  box-shadow: 0px 0px 0px #ffffff;
   border: 1px solid #27305e;
   height: 16px;
   width: 16px;
   border-radius: 15px;
-  background: #FFFFFF;
+  background: #ffffff;
   cursor: pointer;
 }
 
@@ -475,7 +557,7 @@ div a.active {
 }
 
 @media screen and (max-width: 937px) and (min-width: 767px) {
-  .ui.grid>[class*="three column"].row>.column.projectcolumn {
+  .ui.grid > [class*="three column"].row > .column.projectcolumn {
     min-width: 74%;
     padding-bottom: 90px;
   }
@@ -484,37 +566,37 @@ div a.active {
 /* The below media query is for handling widths smaller than 767px - need to fix */
 
 @media screen and (max-width: 766px) {
-  .ui.grid>[class*="three column"].row>.column.projectcolumn {
+  .ui.grid > [class*="three column"].row > .column.projectcolumn {
     /* min-width: 74%; */
     /* padding: 3rem 3rem!important; */
-    padding: 3rem 3rem!important;
-    min-width: 90%!important;
-    }
+    padding: 3rem 3rem !important;
+    min-width: 90% !important;
+  }
 }
 
-@media screen and (min-height: 900px){
+@media screen and (min-height: 900px) {
   #projectrow {
-  padding-top: 145px;
-  padding-bottom: 270px;
+    padding-top: 145px;
+    padding-bottom: 270px;
+  }
 }
-}
-@media screen and (max-height: 899px){
+@media screen and (max-height: 899px) {
   #projectrow {
-  padding-top: 145px;
-  padding-bottom: 220px;
+    padding-top: 145px;
+    padding-bottom: 220px;
+  }
 }
-}
-@media screen and (max-height: 830px){
+@media screen and (max-height: 830px) {
   #projectrow {
-  padding-top: 145px;
-  padding-bottom: 190px;
+    padding-top: 145px;
+    padding-bottom: 190px;
+  }
 }
-}
-@media screen and (max-height: 790px){
+@media screen and (max-height: 790px) {
   #projectrow {
-  padding-top: 145px;
-  padding-bottom: 150px;
-}
+    padding-top: 145px;
+    padding-bottom: 150px;
+  }
 }
 
 #projectcontainer {
@@ -535,24 +617,24 @@ div#projectcontainer.ui.segment {
 }
 
 #projectsheader {
-  font-family: 'Recoleta-Regular';
+  font-family: "Recoleta-Regular";
   color: #27305e;
 }
 
-.ui.grid>[class*="three column"].row>.column.projectcolumn {
-  width: 24%!important;
-  margin: 0px 45px 0px 45px!important;
+.ui.grid > [class*="three column"].row > .column.projectcolumn {
+  width: 24% !important;
+  margin: 0px 45px 0px 45px !important;
 }
 
 h2.ui.header.projecttitle {
-  font-family: 'Recoleta-Regular';
+  font-family: "Recoleta-Regular";
   color: #27305e;
   text-align: center;
   font-size: 24px;
 }
 
 .projectblurb {
-  font-family: 'Recoleta-Regular';
+  font-family: "Recoleta-Regular";
   color: #27305e;
   margin: 0 0 18px;
   line-height: 18px;
@@ -574,8 +656,8 @@ div.three.column.row.techiconrow {
   padding-bottom: 0px;
 }
 
-.ui.grid>[class*="three column"].row>.column.techicons {
-  width: 61px!important;
+.ui.grid > [class*="three column"].row > .column.techicons {
+  width: 61px !important;
 }
 
 div.two.column.row.techiconrow {
@@ -583,11 +665,11 @@ div.two.column.row.techiconrow {
   padding-bottom: 0px;
 }
 
-.ui.grid>[class*="two column"].row>.column.techicons {
-  width: 59px!important;
+.ui.grid > [class*="two column"].row > .column.techicons {
+  width: 59px !important;
 }
 
-img.techimage{
+img.techimage {
   width: inherit;
 }
 
@@ -605,7 +687,7 @@ img.techimage{
 }
 
 .projectlink {
-  font-family: 'Recoleta-Regular';
+  font-family: "Recoleta-Regular";
   color: #27305e;
   text-align: center;
   font-size: 19px;
@@ -632,45 +714,54 @@ img.techimage{
 
 /* Preloads gifs and hides them to prevent on hover flicker */
 body::after {
-   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-   content:url("./images/projects_images/lifeletter.gif") url("./images/projects_images/quiz.gif") url("./images/projects_images/tamo.gif"); 
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("./images/projects_images/lifeletter.gif")
+    url("./images/projects_images/quiz.gif")
+    url("./images/projects_images/tamo.gif");
 }
 
 #lifeletterimage:hover {
-  content:url("./images/projects_images/lifeletter.gif");
+  content: url("./images/projects_images/lifeletter.gif");
 }
 
 #quizimage:hover {
-  content:url("./images/projects_images/quiz.gif");
+  content: url("./images/projects_images/quiz.gif");
 }
 
 #tamoimage:hover {
-  content:url("./images/projects_images/tamo.gif");
+  content: url("./images/projects_images/tamo.gif");
 }
 
-.ui.list .list>a.item, .ui.list>a.item {
+.ui.list .list > a.item,
+.ui.list > a.item {
   color: #27305e !important;
 }
 
 /* --------------- Fonts below ---------------- */
 
 @font-face {
-  font-family: 'Vary Light';
+  font-family: "Vary Light";
   font-style: normal;
   font-weight: normal;
-  src: local('Vary Light'), url('./fonts/varylight.woff') format('woff');
-  }
+  src: local("Vary Light"), url("./fonts/varylight.woff") format("woff");
+}
 
 @font-face {
-  font-family: 'Recoleta-Regular';
+  font-family: "Recoleta-Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('Recoleta-Regular'), url('./fonts/Recoleta-Regular.woff') format('woff');
-  }
+  src: local("Recoleta-Regular"),
+    url("./fonts/Recoleta-Regular.woff") format("woff");
+}
 
 @font-face {
-  font-family: 'National2-Black';
+  font-family: "National2-Black";
   font-style: normal;
   font-weight: normal;
-  src: local('National2-Black'), url('./fonts/National2-Black.woff') format('woff');
-  }
+  src: local("National2-Black"),
+    url("./fonts/National2-Black.woff") format("woff");
+}
