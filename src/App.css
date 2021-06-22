@@ -88,7 +88,7 @@ body {
 @media screen and (max-width: 767px) {
   #name {
     font-family: "National2-Black";
-    font-size: 80px;
+    font-size: 70px;
     color: #27305e;
     padding: 30px 0px 0px 50px;
     margin-bottom: 0px;
@@ -182,13 +182,6 @@ body {
 
 @media screen and (max-width: 1214px) {
   #nav {
-    /* position: fixed;
-    top: 55px;
-    right: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    z-index: 2; */
     display: none;
   }
 }
@@ -272,6 +265,10 @@ div a.active {
     line-height: 49px;
     font-size: 23px;
   }
+
+  #photocolumn {
+    margin: 0px 30px 0px 30px;
+  }
 }
 
 @media screen and (min-width: 1026px) and (max-width: 1214px) {
@@ -286,6 +283,11 @@ div a.active {
     color: #27305e;
     line-height: 45px;
     font-size: 21px;
+  }
+
+  #photocolumn {
+    margin: 0px 30px 0px 30px;
+    transform: scale(0.9);
   }
 }
 
@@ -302,24 +304,34 @@ div a.active {
     line-height: 42px;
     font-size: 19px;
   }
+
+  #photocolumn {
+    margin: 0px 30px 0px 30px;
+    transform: scale(0.8);
+  }
 }
 
 @media screen and (max-width: 767px) {
   #greeting {
     font-family: "Recoleta-Regular";
     color: #27305e;
-    font-size: 33px;
+    font-size: 24px;
   }
 
   #blurb {
     font-family: "Recoleta-Regular";
     color: #27305e;
-    line-height: 49px;
-    font-size: 23px;
+    line-height: 39px;
+    font-size: 17px;
   }
 
   #blurbcolumn {
     max-width: 600px;
+  }
+
+  #photocolumn {
+    margin: 0px 30px 0px 30px;
+    transform: scale(0.8);
   }
 }
 
@@ -401,6 +413,7 @@ div a.active {
 
 /* --------------- Photo section below --------------- */
 
+/* Photocolumn moved to about section media queries */
 #photocolumn {
   margin: 0px 30px 0px 30px;
 }
