@@ -88,11 +88,11 @@ body {
 @media screen and (max-width: 767px) {
   #name {
     font-family: "National2-Black";
-    font-size: 70px;
+    font-size: 55px;
     color: #27305e;
     padding: 30px 0px 0px 50px;
     margin-bottom: 0px;
-    text-align: center;
+    text-align: start;
   }
 }
 
@@ -180,13 +180,27 @@ body {
 
 /* Deals with different screen heights for projects */
 
-@media screen and (max-width: 1214px) {
+@media screen and (max-width: 1020px) {
   #nav {
     display: none;
   }
 }
 
-@media screen and (min-width: 1215px) {
+@media screen and (min-width: 1252px) {
+  .navButton {
+    font-family: "Recoleta-Regular";
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1251px) {
+  .navButton {
+    font-family: "Recoleta-Regular";
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1021px) {
   #nav {
     position: fixed;
     top: 55px;
@@ -196,11 +210,6 @@ body {
     justify-content: flex-end;
     z-index: 2;
   }
-}
-
-.navButton {
-  font-family: "Recoleta-Regular";
-  font-size: 24px;
 }
 
 div a.active {
@@ -287,7 +296,7 @@ div a.active {
 
   #photocolumn {
     margin: 0px 30px 0px 30px;
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 }
 
@@ -360,18 +369,6 @@ div a.active {
 .ui.toggle.checkbox.pigtoggle input:focus:checked ~ label:before {
   background-color: #27305e !important;
 }
-
-/* .ui.toggle.checkbox.pigtoggle input:focus:checked~.box:before, .ui.toggle.checkbox.pigtoggle input:focus:checked~label:after {
-  background-color: #27305e !important;
-} */
-
-/* .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
-  background-color: #27305e !important;
-}
-
-.ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:after {
-  background-color: #27305e !important;
-} */
 
 /* ------- Emoji Hand wave section below ---------- */
 
