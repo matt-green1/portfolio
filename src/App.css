@@ -243,21 +243,88 @@ div a.active {
   padding-top: 2984px 0!important;
 } */
 
+/* @media screen and (min-width: 1215px) {
+  
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1214px) {
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+  
+} */
+
+@media screen and (min-width: 1215px) {
+  #greeting {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    font-size: 33px;
+  }
+
+  #blurb {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    line-height: 49px;
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1214px) {
+  #greeting {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    font-size: 30px;
+  }
+
+  #blurb {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    line-height: 45px;
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  #greeting {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    font-size: 27px;
+  }
+
+  #blurb {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    line-height: 42px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #greeting {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    font-size: 33px;
+  }
+
+  #blurb {
+    font-family: "Recoleta-Regular";
+    color: #27305e;
+    line-height: 49px;
+    font-size: 23px;
+  }
+
+  #blurbcolumn {
+    max-width: 600px;
+  }
+}
+
 #blurbcolumn {
-  margin: 0px 0px 0px 100px;
-}
-
-#greeting {
-  font-family: "Recoleta-Regular";
-  color: #27305e;
-  font-size: 33px;
-}
-
-#blurb {
-  font-family: "Recoleta-Regular";
-  color: #27305e;
-  line-height: 49px;
-  font-size: 23px;
+  margin: 0px 0px 0px 105px;
 }
 
 #pigemoji {
